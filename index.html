@@ -20,22 +20,27 @@
   --lav:#e9e4f5;
   --green:#a8c5b2;
 }
+
 *{
   box-sizing:border-box;
   scroll-behavior:smooth
 }
+
 body{
   margin:0;
   background:#171729;
   color:var(--ink);
   font-family:"DM Sans",sans-serif
 }
+
 button,a{
   font:inherit
 }
+
 input,select,button{
   font-family:"DM Sans",sans-serif
 }
+
 .page{
   max-width:520px;
   margin:auto;
@@ -44,6 +49,7 @@ input,select,button{
   overflow:hidden;
   position:relative
 }
+
 .cover{
   min-height:100vh;
   display:flex;
@@ -60,6 +66,7 @@ input,select,button{
    linear-gradient(145deg,#24233d,#111122);
   background-size:150px 150px,190px 190px,220px 220px,auto;
 }
+
 .cover-card{
   width:min(100%,430px);
   background:#fff;
@@ -67,27 +74,6 @@ input,select,button{
   padding:18px 18px 28px;
   box-shadow:0 25px 70px rgba(0,0,0,.35);
   position:relative
-}
-.art-wrap{
-  position:relative;
-  aspect-ratio:1/1;
-  border-radius:22px;
-  overflow:hidden;
-  background:#fff
-}
-
-.art{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0;
-  transition:opacity 1s ease
-}
-
-.art.active{
-  opacity:1
 }
 
 .cover h1{
@@ -355,11 +341,7 @@ h2{
   border:1px solid #e8d8de
 }
 
-.whatsapp{
-  background:#4b9b6d;
-  color:#fff
-}
-
+/* MUSIC BUTTON */
 .music{
   position:fixed;
   right:18px;
@@ -371,7 +353,7 @@ h2{
   background:#a8667b;
   color:#fff;
   box-shadow:0 10px 30px rgba(0,0,0,.2);
-  z-index:20;
+  z-index:999;
   cursor:pointer;
   font-size:20px
 }
@@ -484,25 +466,40 @@ h2{
 
 <div class="page" id="top">
 
-  <!-- COVER -->
   <section class="cover" id="cover">
 
     <div class="cover-card cover-simple">
 
-      <div class="blessing">|| Jay Swaminarayn ||</div>
+      <div class="blessing">
+        || Jay Swaminarayn ||
+      </div>
 
-      <div class="cover-flower">✦ ❀ ✦</div>
+      <div class="cover-flower">
+        ✦ ❀ ✦
+      </div>
 
-      <div class="sub">A little blessing is on the way</div>
+      <div class="sub">
+        A little blessing is on the way
+      </div>
 
-      <h1>Nikita &amp; Swapan</h1>
+      <h1>
+        Nikita &amp; Swapan
+      </h1>
 
-      <div class="script">SwapNik Baby Shower</div>
+      <div class="script">
+        SwapNik Baby Shower
+      </div>
 
-      <p class="cover-date">Sunday • November 22, 2026</p>
+      <p class="cover-date">
+        Sunday • November 22, 2026
+      </p>
 
-      <button class="open-btn" onclick="openInvitation()">
+      <button
+        class="open-btn"
+        onclick="openInvitation()">
+
         Open Invitation ✨
+
       </button>
 
     </div>
@@ -514,7 +511,6 @@ h2{
   </section>
 
 
-  <!-- INVITATION -->
   <div id="invitation" class="hidden">
 
     <nav class="nav">
@@ -526,10 +522,11 @@ h2{
     </nav>
 
 
-    <!-- HOME -->
     <section class="section" id="home">
 
-      <div class="kicker">With love &amp; joy</div>
+      <div class="kicker">
+        With love &amp; joy
+      </div>
 
       <h2>
         Welcome to<br>
@@ -548,10 +545,11 @@ h2{
     </section>
 
 
-    <!-- DETAILS -->
     <section class="section alt" id="details">
 
-      <div class="kicker">Save the date</div>
+      <div class="kicker">
+        Save the date
+      </div>
 
       <h2>
         Come celebrate<br>
@@ -562,6 +560,7 @@ h2{
 
         <div class="event-row">
           <div class="icon">📅</div>
+
           <div>
             <div class="label">Date</div>
             <div class="value">
@@ -570,8 +569,10 @@ h2{
           </div>
         </div>
 
+
         <div class="event-row">
           <div class="icon">⏰</div>
+
           <div>
             <div class="label">Time</div>
             <div class="value">
@@ -580,8 +581,10 @@ h2{
           </div>
         </div>
 
+
         <div class="event-row">
           <div class="icon">👶</div>
+
           <div>
             <div class="label">Celebrating</div>
             <div class="value">
@@ -593,7 +596,6 @@ h2{
       </div>
 
 
-      <!-- COUNTDOWN -->
       <div class="countdown">
 
         <div class="timebox">
@@ -621,10 +623,11 @@ h2{
     </section>
 
 
-    <!-- GUESS -->
     <section class="section" id="guess">
 
-      <div class="kicker">A little game</div>
+      <div class="kicker">
+        A little game
+      </div>
 
       <h2>
         Team Boy or<br>
@@ -640,16 +643,33 @@ h2{
 
         <div class="poll-options">
 
-          <button class="option" onclick="vote('Team Boy', this)">
-            <span class="team-emoji boy">👦🏻</span>
+          <button
+            class="option"
+            onclick="vote('Team Boy', this)">
+
+            <span class="team-emoji boy">
+              👦🏻
+            </span>
+
             <br>
+
             <b>Team Boy</b>
+
           </button>
 
-          <button class="option" onclick="vote('Team Girl', this)">
-            <span class="team-emoji girl">👧🏻</span>
+
+          <button
+            class="option"
+            onclick="vote('Team Girl', this)">
+
+            <span class="team-emoji girl">
+              👧🏻
+            </span>
+
             <br>
+
             <b>Team Girl</b>
+
           </button>
 
         </div>
@@ -662,10 +682,11 @@ h2{
       </div>
 
 
-      <!-- BABY NAME -->
       <div class="poll-card">
 
-        <div class="kicker">Your idea</div>
+        <div class="kicker">
+          Your idea
+        </div>
 
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;margin:8px 0">
           Suggest a baby name 💕
@@ -693,7 +714,6 @@ h2{
     </section>
 
 
-    <!-- VENUE -->
     <section class="section alt" id="venue">
 
       <div class="kicker">
@@ -715,8 +735,12 @@ h2{
           Bombay Palace Restaurant And Banquets
         </h3>
 
-        <p class="lead" style="margin-bottom:0">
+        <p
+          class="lead"
+          style="margin-bottom:0">
+
           200 Advance Blvd, Brampton, ON L6T 4V4
+
         </p>
 
         <a
@@ -734,7 +758,6 @@ h2{
     </section>
 
 
-    <!-- RSVP -->
     <section class="section" id="rsvp">
 
       <div class="rsvp-card">
@@ -757,8 +780,11 @@ h2{
           onsubmit="submitRSVP(event)"
           style="text-align:left;margin-top:18px">
 
-          <label style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+          <label
+            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+
             Your name
+
           </label>
 
           <input
@@ -768,8 +794,11 @@ h2{
             style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px">
 
 
-          <label style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+          <label
+            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+
             Will you attend?
+
           </label>
 
           <select
@@ -777,7 +806,9 @@ h2{
             required
             style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px;background:#fff">
 
-            <option value="">Select</option>
+            <option value="">
+              Select
+            </option>
 
             <option value="Yes, I’m coming">
               Yes, I’m coming 💕
@@ -790,8 +821,11 @@ h2{
           </select>
 
 
-          <label style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+          <label
+            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
+
             Number of guests
+
           </label>
 
           <select
@@ -816,6 +850,7 @@ h2{
             Send RSVP 💌
 
           </button>
+
 
           <p
             id="rsvpResult"
@@ -842,14 +877,12 @@ h2{
     </section>
 
 
-    <!-- FOOTER -->
     <div class="footer">
 
       Made with love for Nikita &amp; Swapan ✨
       <br>
 
       SwapNik Baby Shower • November 22, 2026
-
       <br>
 
       <strong>Invitation</strong>
@@ -861,182 +894,284 @@ h2{
 </div>
 
 
-<!-- MUSIC BUTTON -->
+<!-- =====================================================
+     MUSIC PLAYER
+     Put music.mp3 in the SAME folder as this HTML file.
+===================================================== -->
+
+<audio
+  id="music"
+  loop
+  preload="auto">
+
+  <source
+    src="./music.mp3"
+    type="audio/mpeg">
+
+  Your browser does not support audio.
+
+</audio>
+
+
 <button
-  class="music"
   id="musicBtn"
-  aria-label="Music"
+  class="music"
+  type="button"
+  aria-label="Play music"
   onclick="toggleMusic()">
 
-  ♫
+  🎵
 
 </button>
 
 
-<!-- BACKGROUND MUSIC -->
-<audio id="music" loop preload="auto">
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+<!-- =====================================================
+     GOOGLE APPS SCRIPT
+===================================================== -->
 
-
-<!-- GOOGLE APPS SCRIPT URL -->
 <script>
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+const GOOGLE_SCRIPT_URL =
+  "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
 </script>
 
 
 <script>
 
+/* =====================================================
+   MUSIC
+===================================================== */
+
+const music =
+  document.getElementById("music");
+
+const musicBtn =
+  document.getElementById("musicBtn");
+
+
+function toggleMusic(){
+
+  if(music.paused){
+
+    music.load();
+
+    music.play()
+
+      .then(() => {
+
+        musicBtn.textContent = "🔊";
+
+        musicBtn.setAttribute(
+          "aria-label",
+          "Pause music"
+        );
+
+      })
+
+      .catch((error) => {
+
+        console.error(
+          "Music failed:",
+          error
+        );
+
+        alert(
+          "Music could not be played. Please check that music.mp3 is a valid MP3 file."
+        );
+
+      });
+
+  }else{
+
+    music.pause();
+
+    musicBtn.textContent = "🎵";
+
+    musicBtn.setAttribute(
+      "aria-label",
+      "Play music"
+    );
+
+  }
+
+}
+
+
+music.addEventListener(
+  "ended",
+  () => {
+
+    musicBtn.textContent = "🎵";
+
+  }
+);
+
+
+music.addEventListener(
+  "error",
+  () => {
+
+    console.error(
+      "Could not load music.mp3"
+    );
+
+    musicBtn.textContent = "⚠️";
+
+  }
+);
+
+
+/* =====================================================
+   OPEN INVITATION
+===================================================== */
+
 let opened = false;
 
-
-/* =========================
-   OPEN INVITATION
-========================= */
 
 function openInvitation(){
 
   opened = true;
 
   document
-    .getElementById('invitation')
-    .classList.remove('hidden');
+    .getElementById("invitation")
+    .classList.remove("hidden");
 
   document
-    .getElementById('cover')
-    .style.minHeight = 'auto';
+    .getElementById("cover")
+    .style.minHeight = "auto";
 
-  document
-    .getElementById('invitation')
-    .scrollIntoView({
-      behavior:'smooth'
+
+  /*
+    Start music directly from the user's
+    Open Invitation button click.
+  */
+
+  music.volume = 1.0;
+
+  music.load();
+
+  music.play()
+
+    .then(() => {
+
+      musicBtn.textContent = "🔊";
+
+    })
+
+    .catch((error) => {
+
+      console.log(
+        "Automatic music start blocked:",
+        error
+      );
+
+      /*
+        The visitor can now press the
+        floating 🎵 button manually.
+      */
+
+      musicBtn.textContent = "🎵";
+
     });
 
-  const audio = document.getElementById('music');
 
-  audio.play()
-    .then(()=>{
-      document.getElementById('musicBtn').textContent='♫';
-    })
-    .catch(()=>{});
-
-}
-
-
-/* =========================
-   MUSIC
-========================= */
-
-function toggleMusic(){
-
-  const audio = document.getElementById('music');
-
-  if(audio.paused){
-
-    audio.play()
-      .then(()=>{
-        document.getElementById('musicBtn').textContent='♫';
-      })
-      .catch(()=>{});
-
-  }else{
-
-    audio.pause();
-
-    document.getElementById('musicBtn').textContent='🔇';
-
-  }
+  document
+    .getElementById("invitation")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
 
 }
 
 
-/*
-  Some mobile browsers require a user interaction
-  before audio can play.
-
-  The Open Invitation button already provides that
-  interaction, but this also helps when the visitor
-  taps elsewhere on the page.
-*/
-
-document.addEventListener('click', function(){
-
-  const audio = document.getElementById('music');
-
-  if(opened && audio.paused){
-
-    audio.play()
-      .then(()=>{
-        document.getElementById('musicBtn').textContent='♫';
-      })
-      .catch(()=>{});
-
-  }
-
-}, {once:false});
-
-
-/* =========================
+/* =====================================================
    COUNTDOWN
-========================= */
+===================================================== */
 
 function updateCountdown(){
 
   const target =
-    new Date('2026-11-22T10:00:00-05:00').getTime();
+    new Date(
+      "2026-11-22T10:00:00-05:00"
+    ).getTime();
 
-  const now = Date.now();
+  const now =
+    Date.now();
 
-  const d = Math.max(0, target-now);
+  const d =
+    Math.max(
+      0,
+      target - now
+    );
 
-  document.getElementById('days').textContent =
-    Math.floor(d/86400000);
 
-  document.getElementById('hours').textContent =
-    Math.floor(d%86400000/3600000);
+  document.getElementById("days").textContent =
+    Math.floor(
+      d / 86400000
+    );
 
-  document.getElementById('mins').textContent =
-    Math.floor(d%3600000/60000);
 
-  document.getElementById('secs').textContent =
-    Math.floor(d%60000/1000);
+  document.getElementById("hours").textContent =
+    Math.floor(
+      d % 86400000 / 3600000
+    );
+
+
+  document.getElementById("mins").textContent =
+    Math.floor(
+      d % 3600000 / 60000
+    );
+
+
+  document.getElementById("secs").textContent =
+    Math.floor(
+      d % 60000 / 1000
+    );
 
 }
 
+
 updateCountdown();
 
-setInterval(updateCountdown,1000);
+setInterval(
+  updateCountdown,
+  1000
+);
 
 
-/* =========================
+/* =====================================================
    GOOGLE SHEET
-========================= */
+===================================================== */
 
 function postToGoogleSheet(data){
 
   if(
     !GOOGLE_SCRIPT_URL ||
-    GOOGLE_SCRIPT_URL.includes('PASTE_YOUR')
+    GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")
   ){
 
     return Promise.reject(
       new Error(
-        'Google Sheet connection is not configured yet.'
+        "Google Sheet connection is not configured yet."
       )
     );
 
   }
 
-  const body = new URLSearchParams(data);
+
+  const body =
+    new URLSearchParams(data);
+
 
   return fetch(
     GOOGLE_SCRIPT_URL,
     {
-      method:'POST',
-      mode:'no-cors',
+      method:"POST",
+      mode:"no-cors",
       headers:{
-        'Content-Type':
-          'application/x-www-form-urlencoded;charset=UTF-8'
+        "Content-Type":
+          "application/x-www-form-urlencoded;charset=UTF-8"
       },
       body
     }
@@ -1045,80 +1180,110 @@ function postToGoogleSheet(data){
 }
 
 
-/* =========================
-   TEAM BOY / GIRL VOTE
-========================= */
+/* =====================================================
+   TEAM BOY / GIRL
+===================================================== */
 
-function vote(choice, btn){
+function vote(
+  choice,
+  btn
+){
 
   document
-    .querySelectorAll('.option')
-    .forEach(x =>
-      x.classList.remove('selected')
+    .querySelectorAll(".option")
+    .forEach(
+      x =>
+        x.classList.remove(
+          "selected"
+        )
     );
 
-  btn.classList.add('selected');
 
-  document.getElementById('voteResult').textContent =
-    'Saving your guess… 💕';
+  btn.classList.add(
+    "selected"
+  );
+
+
+  document
+    .getElementById("voteResult")
+    .textContent =
+      "Saving your guess… 💕";
+
 
   postToGoogleSheet({
-    type:'Team Vote',
+
+    type:"Team Vote",
+
     vote:choice
-  })
-
-  .then(()=>{
-
-    document.getElementById('voteResult').textContent =
-      'Your guess: ' + choice + ' 💕';
 
   })
 
-  .catch(()=>{
+  .then(() => {
 
-    document.getElementById('voteResult').textContent =
-      'Please connect the Google Sheet first.';
+    document
+      .getElementById("voteResult")
+      .textContent =
+        "Your guess: " +
+        choice +
+        " 💕";
+
+  })
+
+  .catch(() => {
+
+    document
+      .getElementById("voteResult")
+      .textContent =
+        "Please connect the Google Sheet first.";
 
   });
 
 }
 
 
-/* =========================
+/* =====================================================
    BABY NAME
-========================= */
+===================================================== */
 
 function addName(){
 
   const input =
-    document.getElementById('nameInput');
+    document.getElementById(
+      "nameInput"
+    );
 
   const value =
     input.value.trim();
 
-  if(!value) return;
+
+  if(!value)
+    return;
+
 
   postToGoogleSheet({
-    type:'Baby Name',
+
+    type:"Baby Name",
+
     baby_name:value
+
   })
 
-  .then(()=>{
+  .then(() => {
 
-    input.value='';
+    input.value = "";
 
     renderNames();
 
     alert(
-      'Thank you! Your baby name idea was submitted. 💕'
+      "Thank you! Your baby name idea was submitted. 💕"
     );
 
   })
 
-  .catch(()=>{
+  .catch(() => {
 
     alert(
-      'Please connect the Google Sheet first.'
+      "Please connect the Google Sheet first."
     );
 
   });
@@ -1130,67 +1295,83 @@ function renderNames(){
 
   /*
     Names are saved to Google Sheets.
-    They are intentionally not displayed
-    publicly on the invitation.
   */
 
 }
 
 
-/* =========================
+/* =====================================================
    RSVP
-========================= */
+===================================================== */
 
 function submitRSVP(e){
 
   e.preventDefault();
 
-  const result =
-    document.getElementById('rsvpResult');
 
-  result.textContent='Sending…';
+  const result =
+    document.getElementById(
+      "rsvpResult"
+    );
+
+
+  result.textContent =
+    "Sending…";
+
 
   postToGoogleSheet({
 
-    type:'RSVP',
+    type:"RSVP",
 
     name:
       document
-        .getElementById('rsvpName')
+        .getElementById(
+          "rsvpName"
+        )
         .value
         .trim(),
 
     attendance:
       document
-        .getElementById('rsvpAttendance')
+        .getElementById(
+          "rsvpAttendance"
+        )
         .value,
 
     guests:
       document
-        .getElementById('rsvpGuests')
+        .getElementById(
+          "rsvpGuests"
+        )
         .value
 
   })
 
-  .then(()=>{
+  .then(() => {
 
     result.textContent =
-      'Thank you! Your RSVP has been recorded. 💕';
+      "Thank you! Your RSVP has been recorded. 💕";
+
 
     document
-      .getElementById('rsvpForm')
+      .getElementById(
+        "rsvpForm"
+      )
       .reset();
 
   })
 
-  .catch(()=>{
+  .catch(() => {
 
     result.textContent =
-      'Please connect the Google Sheet first.';
+      "Please connect the Google Sheet first.";
 
   });
+
 }
+
 </script>
+
 </body>
 </html>
 
