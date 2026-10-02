@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta
-  name="theme-color"
-  content="#f7e9ee">
+<meta name="theme-color"
+content="#f7e9ee">
 
 <title>
-  Nikita & Swapan | #SwapNik Baby Shower
+Nikita & Swapan | #SwapNik Baby Shower
 </title>
 
-<link
-  rel="preconnect"
-  href="https://fonts.googleapis.com">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin>
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap"
-  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+rel="stylesheet">
 
 
 <style>
-
-/* =====================================================
-   ROOT
-===================================================== */
 
 :root{
   --ink:#3e3035;
@@ -43,11 +35,6 @@
   --cream:#fffaf7;
   --gold:#b68a54;
 }
-
-
-/* =====================================================
-   GLOBAL
-===================================================== */
 
 *{
   box-sizing:border-box;
@@ -80,7 +67,6 @@ select{
 
 /* =====================================================
    COVER
-   THIS IS THE SCREEN BEFORE OPEN INVITATION
 ===================================================== */
 
 .cover{
@@ -97,6 +83,7 @@ select{
   text-align:center;
 
   background:
+
     radial-gradient(
       circle at 15% 15%,
       rgba(255,255,255,.95) 0 1px,
@@ -128,9 +115,6 @@ select{
     auto;
 }
 
-
-/* WHITE COVER CARD */
-
 .cover-card{
   width:min(100%,430px);
 
@@ -138,7 +122,7 @@ select{
 
   border-radius:28px;
 
-  padding:42px 22px 34px;
+  padding:22px 18px 30px;
 
   box-shadow:
     0 25px 70px rgba(0,0,0,.35);
@@ -146,70 +130,49 @@ select{
   position:relative;
 }
 
+.blessing{
+  font-size:16px;
+  color:#3e3035;
+  margin-bottom:8px;
+}
 
-/* =====================================================
-   COVER TITLE
-   SAME ELEGANT STYLE AS YOUR SECOND IMAGE
-===================================================== */
+.cover-flower{
+  font-size:22px;
+  letter-spacing:8px;
+  margin-bottom:12px;
+  color:#b68a54;
+}
 
 .cover h1{
+  font-family:"Cormorant Garamond",serif;
 
-  font-family:
-    "Cormorant Garamond",
-    serif;
+  font-size:34px;
+  line-height:1.05;
 
-  font-size:52px;
+  margin:18px 0 4px;
 
-  line-height:1.02;
+  color:#8c5265;
 
-  margin:8px 0 18px;
-
-  color:#2f292b;
-
-  font-weight:500;
-
-  font-style:italic;
-
+  font-weight:700;
 }
 
-
-/* =====================================================
-   COVER SUBTITLE
-===================================================== */
-
-.cover-subtitle{
-
-  font-family:
-    "Cormorant Garamond",
-    serif;
-
-  font-size:28px;
-
-  line-height:1.2;
-
-  color:#4b4245;
-
-  font-weight:500;
-
-  font-style:italic;
-
-  margin:0 auto 28px;
-
+.cover .sub{
+  font-size:15px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:#8b777c;
 }
 
-
-/* =====================================================
-   COVER DATE
-===================================================== */
+.script{
+  font-family:"Cormorant Garamond",serif;
+  color:#a15d73;
+  font-size:40px;
+  font-weight:700;
+}
 
 .cover-date{
-
-  margin-top:10px;
-
+  margin-top:18px;
   font-size:17px;
-
-  color:#3e3035;
-
 }
 
 
@@ -218,7 +181,6 @@ select{
 ===================================================== */
 
 .open-btn{
-
   display:inline-block;
 
   border:0;
@@ -245,22 +207,17 @@ select{
   transition:
     transform .2s ease,
     box-shadow .2s ease;
-
 }
 
 .open-btn:hover{
-
   transform:translateY(-2px);
 
   box-shadow:
     0 14px 30px rgba(168,102,123,.45);
-
 }
 
 .open-btn:active{
-
   transform:scale(.97);
-
 }
 
 
@@ -282,7 +239,6 @@ select{
 ===================================================== */
 
 .nav{
-
   position:sticky;
 
   top:0;
@@ -302,11 +258,9 @@ select{
 
   border-bottom:
     1px solid #eadde1;
-
 }
 
 .nav a{
-
   font-size:12px;
 
   text-decoration:none;
@@ -314,7 +268,6 @@ select{
   color:#775e67;
 
   font-weight:700;
-
 }
 
 
@@ -323,21 +276,15 @@ select{
 ===================================================== */
 
 .section{
-
   padding:64px 24px;
-
   position:relative;
-
 }
 
 .section.alt{
-
   background:#f7edf1;
-
 }
 
 .kicker{
-
   text-transform:uppercase;
 
   letter-spacing:2.5px;
@@ -347,41 +294,32 @@ select{
   color:var(--rose);
 
   font-weight:700;
-
 }
 
 h2{
-
-  font-family:
-    "Cormorant Garamond",
-    serif;
+  font-family:"Cormorant Garamond",serif;
 
   font-size:42px;
 
   line-height:.95;
 
   margin:10px 0 18px;
-
 }
 
 .lead{
-
   line-height:1.75;
 
   color:#6c5d63;
 
   font-size:17px;
-
 }
 
 .decor{
-
   font-size:28px;
 
   letter-spacing:10px;
 
   color:#b68a54;
-
 }
 
 
@@ -404,11 +342,9 @@ h2{
     0 12px 35px rgba(98,65,77,.09);
 
   margin-top:20px;
-
 }
 
 .event-row{
-
   display:flex;
 
   gap:14px;
@@ -417,25 +353,18 @@ h2{
 
   border-bottom:
     1px solid #eee3e6;
-
 }
 
 .event-row:last-child{
-
   border:0;
-
 }
 
 .icon{
-
   font-size:23px;
-
   width:32px;
-
 }
 
 .label{
-
   font-size:13px;
 
   text-transform:uppercase;
@@ -443,15 +372,12 @@ h2{
   letter-spacing:1.5px;
 
   color:#9b7e88;
-
 }
 
 .value{
-
   font-weight:700;
 
   margin-top:3px;
-
 }
 
 
@@ -460,7 +386,6 @@ h2{
 ===================================================== */
 
 .countdown{
-
   display:grid;
 
   grid-template-columns:
@@ -469,11 +394,9 @@ h2{
   gap:8px;
 
   margin-top:22px;
-
 }
 
 .timebox{
-
   background:#fff;
 
   border-radius:18px;
@@ -484,21 +407,17 @@ h2{
 
   box-shadow:
     0 8px 25px rgba(75,50,60,.08);
-
 }
 
 .num{
-
   font-size:27px;
 
   font-weight:700;
 
   color:#a15d73;
-
 }
 
 .unit{
-
   font-size:11px;
 
   letter-spacing:1px;
@@ -506,7 +425,6 @@ h2{
   color:#9b7e88;
 
   text-transform:uppercase;
-
 }
 
 
@@ -515,7 +433,6 @@ h2{
 ===================================================== */
 
 .poll-options{
-
   display:grid;
 
   grid-template-columns:
@@ -524,11 +441,9 @@ h2{
   gap:12px;
 
   margin-top:15px;
-
 }
 
 .team-emoji{
-
   display:inline-flex;
 
   align-items:center;
@@ -544,29 +459,23 @@ h2{
   font-size:31px;
 
   margin-bottom:8px;
-
 }
 
 .team-emoji.boy{
-
   background:#e5f3ff;
 
   box-shadow:
     inset 0 0 0 2px #a9d8f5;
-
 }
 
 .team-emoji.girl{
-
   background:#ffe7ef;
 
   box-shadow:
     inset 0 0 0 2px #f3b3c6;
-
 }
 
 .option{
-
   border:1px solid #eadce1;
 
   background:#fff8fa;
@@ -580,18 +489,15 @@ h2{
   cursor:pointer;
 
   transition:.2s;
-
 }
 
 .option:hover,
 .option.selected{
-
   border-color:#b86f83;
 
   background:#f9e8ee;
 
   transform:translateY(-2px);
-
 }
 
 
@@ -600,17 +506,14 @@ h2{
 ===================================================== */
 
 .names{
-
   display:flex;
 
   gap:8px;
 
   margin-top:14px;
-
 }
 
 .names input{
-
   flex:1;
 
   min-width:0;
@@ -623,7 +526,6 @@ h2{
   padding:14px;
 
   font-size:16px;
-
 }
 
 .names button,
@@ -642,11 +544,9 @@ h2{
   font-weight:700;
 
   cursor:pointer;
-
 }
 
 .name-list{
-
   margin-top:12px;
 
   display:flex;
@@ -654,11 +554,9 @@ h2{
   flex-wrap:wrap;
 
   gap:8px;
-
 }
 
 .tag{
-
   background:#f3e4e9;
 
   border-radius:999px;
@@ -666,7 +564,6 @@ h2{
   padding:7px 11px;
 
   font-size:12px;
-
 }
 
 
@@ -675,7 +572,6 @@ h2{
 ===================================================== */
 
 .map-btn{
-
   display:block;
 
   text-align:center;
@@ -693,7 +589,6 @@ h2{
   margin-top:15px;
 
   font-weight:700;
-
 }
 
 
@@ -702,7 +597,6 @@ h2{
 ===================================================== */
 
 .rsvp-card{
-
   background:
     linear-gradient(
       145deg,
@@ -711,43 +605,32 @@ h2{
     );
 
   text-align:center;
-
 }
 
 .rsvp-actions{
-
   display:grid;
 
   gap:10px;
 
   margin-top:18px;
-
 }
 
+.rsvp-actions .rsvp-deadline{
 
-/* =====================================================
-   RSVP DEADLINE
-===================================================== */
+  padding:13px;
 
-.rsvp-deadline{
+  border-radius:14px;
 
-  background:#fff;
+  text-align:center;
+
+  font-weight:700;
 
   color:#8f5367;
 
   border:
     1px solid #e8d8de;
 
-  border-radius:14px;
-
-  padding:15px;
-
-  text-align:center;
-
-  font-weight:700;
-
-  font-size:15px;
-
+  background:#fff;
 }
 
 
@@ -756,7 +639,6 @@ h2{
 ===================================================== */
 
 .footer{
-
   text-align:center;
 
   padding:40px 20px 75px;
@@ -770,7 +652,6 @@ h2{
   line-height:1.7;
 
   font-weight:600;
-
 }
 
 
@@ -781,115 +662,73 @@ h2{
 @media(max-width:520px){
 
   .cover{
-
     padding:24px 16px 30px;
-
   }
 
   .cover-card{
-
-    padding:42px 18px 32px;
+    padding:22px 18px 30px;
 
     border-radius:24px;
-
   }
 
   .cover h1{
-
-    font-size:43px;
-
+    font-size:34px;
   }
 
-  .cover-subtitle{
+  .cover .script{
+    font-size:35px;
+  }
 
-    font-size:25px;
+  .cover .sub{
+    font-size:14px;
 
+    letter-spacing:2px;
   }
 
   .cover-date{
-
     font-size:17px;
-
   }
 
   .open-btn{
-
     font-size:16px;
 
     padding:15px 28px;
-
   }
 
   .section{
-
     padding:54px 20px;
-
   }
 
   h2{
-
     font-size:40px;
-
   }
 
   .script{
-
     font-size:36px;
-
   }
 
   .lead{
-
     font-size:17px;
-
   }
 
   .value{
-
     font-size:16px;
-
   }
 
   .option{
-
     font-size:16px;
 
     padding:17px 12px;
-
   }
 
   .map-btn,
-  .primary{
-
+  .primary,
+  .rsvp-actions .rsvp-deadline{
     font-size:16px;
-
   }
 
   .footer{
-
     font-size:18px;
-
-  }
-
-}
-
-
-/* =====================================================
-   SMALL PHONES
-===================================================== */
-
-@media(max-width:380px){
-
-  .cover h1{
-
-    font-size:38px;
-
-  }
-
-  .cover-subtitle{
-
-    font-size:23px;
-
   }
 
 }
@@ -902,64 +741,381 @@ h2{
 <body>
 
 
-<div
-  class="page"
-  id="top">
+<div class="page" id="top">
 
 
-  <!-- =================================================
-       COVER
-       BEFORE OPEN INVITATION
-  ================================================== -->
+<!-- =================================================
+     COVER
+================================================== -->
 
-  <section
-    class="cover"
-    id="cover">
+<section class="cover" id="cover">
 
 
-    <div
-      class="cover-card">
+  <div class="cover-card">
 
 
-      <!-- MAIN COVER TITLE -->
-
-      <h1>
-
-        Nikita &amp; Swapan's<br>
-
-        Baby Shower
-
-      </h1>
+    <div class="blessing">
+      || Jay Swaminarayn ||
+    </div>
 
 
-      <!-- COVER SUBTITLE -->
+    <div class="cover-flower">
+      ✦ ❀ ✦
+    </div>
 
-      <div
-        class="cover-subtitle">
 
-        Join us for the sweet adventure!
+    <div class="sub">
+      A little blessing is on the way
+    </div>
+
+
+    <h1>
+      Nikita &amp; Swapan
+    </h1>
+
+
+    <div class="script">
+      #SwapNik Baby Shower
+    </div>
+
+
+    <p class="cover-date">
+      Sunday • November 22, 2026
+    </p>
+
+
+    <!-- OPEN INVITATION -->
+
+    <button
+      id="openInvitation"
+      class="open-btn"
+      type="button">
+
+      OPEN INVITATION
+
+    </button>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- =================================================
+     INVITATION CONTENT
+================================================== -->
+
+<div id="invitation">
+
+
+<!-- NAVIGATION -->
+
+<nav class="nav">
+
+  <a href="#home">
+    HOME
+  </a>
+
+  <a href="#details">
+    DETAILS
+  </a>
+
+  <a href="#guess">
+    GUESS
+  </a>
+
+  <a href="#venue">
+    VENUE
+  </a>
+
+  <a href="#rsvp">
+    RSVP
+  </a>
+
+</nav>
+
+
+<!-- =================================================
+     HOME
+================================================== -->
+
+<section
+  class="section"
+  id="home">
+
+  <div class="kicker">
+    With love &amp; joy
+  </div>
+
+
+  <h2>
+
+    Welcome to<br>
+
+    <span class="script">
+      SwapNik's
+    </span><br>
+
+    Baby Shower
+
+  </h2>
+
+
+  <p class="lead">
+
+    A tiny miracle is joining our family,
+    and we'd love to celebrate this beautiful
+    chapter with you.
+
+  </p>
+
+
+  <div class="decor">
+    ✦ ❀ ✦
+  </div>
+
+</section>
+
+
+<!-- =================================================
+     DETAILS
+================================================== -->
+
+<section
+  class="section alt"
+  id="details">
+
+
+  <div class="kicker">
+    Save the date
+  </div>
+
+
+  <h2>
+
+    Come celebrate<br>
+    with us
+
+  </h2>
+
+
+  <div class="event-card">
+
+
+    <div class="event-row">
+
+      <div class="icon">
+        📅
+      </div>
+
+      <div>
+
+        <div class="label">
+          Date
+        </div>
+
+        <div class="value">
+          Sunday, November 22, 2026
+        </div>
 
       </div>
 
-
-      <!-- DATE -->
-
-      <p
-        class="cover-date">
-
-        Sunday • November 22, 2026
-
-      </p>
+    </div>
 
 
-      <!-- OPEN INVITATION -->
+    <div class="event-row">
+
+      <div class="icon">
+        ⏰
+      </div>
+
+      <div>
+
+        <div class="label">
+          Time
+        </div>
+
+        <div class="value">
+          10:00 AM onwards
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="event-row">
+
+      <div class="icon">
+        👶
+      </div>
+
+      <div>
+
+        <div class="label">
+          Celebrating
+        </div>
+
+        <div class="value">
+          Nikita &amp; Swapan
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- COUNTDOWN -->
+
+  <div class="countdown">
+
+
+    <div class="timebox">
+
+      <div
+        class="num"
+        id="days">
+
+        --
+
+      </div>
+
+      <div class="unit">
+        Days
+      </div>
+
+    </div>
+
+
+    <div class="timebox">
+
+      <div
+        class="num"
+        id="hours">
+
+        --
+
+      </div>
+
+      <div class="unit">
+        Hours
+      </div>
+
+    </div>
+
+
+    <div class="timebox">
+
+      <div
+        class="num"
+        id="mins">
+
+        --
+
+      </div>
+
+      <div class="unit">
+        Minutes
+      </div>
+
+    </div>
+
+
+    <div class="timebox">
+
+      <div
+        class="num"
+        id="secs">
+
+        --
+
+      </div>
+
+      <div class="unit">
+        Seconds
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =================================================
+     GUESS
+================================================== -->
+
+<section
+  class="section"
+  id="guess">
+
+
+  <div class="kicker">
+    A little game
+  </div>
+
+
+  <h2>
+
+    Team Boy or<br>
+
+    <span class="script">
+      Team Girl?
+    </span>
+
+  </h2>
+
+
+  <p class="lead">
+
+    Make your guess and let us know
+    what your heart says!
+
+  </p>
+
+
+  <div class="poll-card">
+
+
+    <div class="poll-options">
+
 
       <button
-        id="openInvitation"
-        class="open-btn"
-        type="button">
+        class="option"
+        onclick="vote('Team Boy', this)">
 
-        OPEN INVITATION
+        <span class="team-emoji boy">
+          👦🏻
+        </span>
+
+        <br>
+
+        <b>
+          Team Boy
+        </b>
+
+      </button>
+
+
+      <button
+        class="option"
+        onclick="vote('Team Girl', this)">
+
+        <span class="team-emoji girl">
+          👧🏻
+        </span>
+
+        <br>
+
+        <b>
+          Team Girl
+        </b>
 
       </button>
 
@@ -967,874 +1123,371 @@ h2{
     </div>
 
 
-  </section>
+    <p
+      id="voteResult"
+      style="
+        font-size:15px;
+        text-align:center;
+        color:#8b6975;
+        margin-bottom:0;
+      ">
+    </p>
 
 
+  </div>
 
-  <!-- =================================================
-       INVITATION CONTENT
-  ================================================== -->
 
-  <div
-    id="invitation">
+  <!-- BABY NAME -->
 
+  <div class="poll-card">
 
-    <!-- =================================================
-         NAVIGATION
-    ================================================== -->
 
-    <nav
-      class="nav">
+    <div class="kicker">
+      Your idea
+    </div>
 
 
-      <a href="#home">
-        HOME
-      </a>
+    <h3
+      style="
+        font-family:'Cormorant Garamond',serif;
+        font-size:30px;
+        font-weight:700;
+        margin:8px 0;
+      ">
 
+      Suggest a baby name 💕
 
-      <a href="#details">
-        DETAILS
-      </a>
+    </h3>
 
 
-      <a href="#guess">
-        GUESS
-      </a>
+    <div class="names">
 
 
-      <a href="#venue">
-        VENUE
-      </a>
+      <input
+        id="nameInput"
+        placeholder="Type a name">
 
 
-      <a href="#rsvp">
-        RSVP
-      </a>
+      <button
+        onclick="addName()">
 
+        Add
 
-    </nav>
+      </button>
 
 
+    </div>
 
-    <!-- =================================================
-         HOME
-    ================================================== -->
-
-    <section
-      class="section"
-      id="home">
-
-
-      <div
-        class="kicker">
-
-        With love &amp; joy
-
-      </div>
-
-
-      <h2>
-
-        Welcome to<br>
-
-        <span class="script">
-          SwapNik's
-        </span><br>
-
-        Baby Shower
-
-      </h2>
-
-
-      <p
-        class="lead">
-
-        A tiny miracle is joining our family,
-        and we'd love to celebrate this beautiful
-        chapter with you.
-
-      </p>
-
-
-      <div
-        class="decor">
-
-        ✦ ❀ ✦
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         DETAILS
-    ================================================== -->
-
-    <section
-      class="section alt"
-      id="details">
-
-
-      <div
-        class="kicker">
-
-        Save the date
-
-      </div>
-
-
-      <h2>
-
-        Come celebrate<br>
-        with us
-
-      </h2>
-
-
-      <div
-        class="event-card">
-
-
-        <div
-          class="event-row">
-
-
-          <div
-            class="icon">
-
-            📅
-
-          </div>
-
-
-          <div>
-
-
-            <div
-              class="label">
-
-              Date
-
-            </div>
-
-
-            <div
-              class="value">
-
-              Sunday, November 22, 2026
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <div
-          class="event-row">
-
-
-          <div
-            class="icon">
-
-            ⏰
-
-          </div>
-
-
-          <div>
-
-
-            <div
-              class="label">
-
-              Time
-
-            </div>
-
-
-            <div
-              class="value">
-
-              10:00 AM onwards
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <div
-          class="event-row">
-
-
-          <div
-            class="icon">
-
-            👶
-
-          </div>
-
-
-          <div>
-
-
-            <div
-              class="label">
-
-              Celebrating
-
-            </div>
-
-
-            <div
-              class="value">
-
-              Nikita &amp; Swapan
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- COUNTDOWN -->
-
-      <div
-        class="countdown">
-
-
-        <div
-          class="timebox">
-
-          <div
-            class="num"
-            id="days">
-
-            --
-
-          </div>
-
-          <div
-            class="unit">
-
-            Days
-
-          </div>
-
-        </div>
-
-
-        <div
-          class="timebox">
-
-          <div
-            class="num"
-            id="hours">
-
-            --
-
-          </div>
-
-          <div
-            class="unit">
-
-            Hours
-
-          </div>
-
-        </div>
-
-
-        <div
-          class="timebox">
-
-          <div
-            class="num"
-            id="mins">
-
-            --
-
-          </div>
-
-          <div
-            class="unit">
-
-            Minutes
-
-          </div>
-
-        </div>
-
-
-        <div
-          class="timebox">
-
-          <div
-            class="num"
-            id="secs">
-
-            --
-
-          </div>
-
-          <div
-            class="unit">
-
-            Seconds
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         GUESS
-    ================================================== -->
-
-    <section
-      class="section"
-      id="guess">
-
-
-      <div
-        class="kicker">
-
-        A little game
-
-      </div>
-
-
-      <h2>
-
-        Team Boy or<br>
-
-        <span class="script">
-
-          Team Girl?
-
-        </span>
-
-      </h2>
-
-
-      <p
-        class="lead">
-
-        Make your guess and let us know
-        what your heart says!
-
-      </p>
-
-
-
-      <div
-        class="poll-card">
-
-
-        <div
-          class="poll-options">
-
-
-          <button
-            class="option"
-            onclick="vote('Team Boy', this)">
-
-
-            <span
-              class="team-emoji boy">
-
-              👦🏻
-
-            </span>
-
-
-            <br>
-
-
-            <b>
-
-              Team Boy
-
-            </b>
-
-
-          </button>
-
-
-
-          <button
-            class="option"
-            onclick="vote('Team Girl', this)">
-
-
-            <span
-              class="team-emoji girl">
-
-              👧🏻
-
-            </span>
-
-
-            <br>
-
-
-            <b>
-
-              Team Girl
-
-            </b>
-
-
-          </button>
-
-
-        </div>
-
-
-        <p
-          id="voteResult"
-          style="
-            font-size:15px;
-            text-align:center;
-            color:#8b6975;
-            margin-bottom:0;
-          ">
-        </p>
-
-
-      </div>
-
-
-
-      <!-- BABY NAME -->
-
-      <div
-        class="poll-card">
-
-
-        <div
-          class="kicker">
-
-          Your idea
-
-        </div>
-
-
-        <h3
-          style="
-            font-family:'Cormorant Garamond',serif;
-            font-size:30px;
-            font-weight:700;
-            margin:8px 0;
-          ">
-
-          Suggest a baby name 💕
-
-        </h3>
-
-
-        <div
-          class="names">
-
-
-          <input
-            id="nameInput"
-            placeholder="Type a name">
-
-
-          <button
-            onclick="addName()">
-
-            Add
-
-          </button>
-
-
-        </div>
-
-
-        <div
-          class="name-list"
-          id="nameList">
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         VENUE
-    ================================================== -->
-
-    <section
-      class="section alt"
-      id="venue">
-
-
-      <div
-        class="kicker">
-
-        Where we'll meet
-
-      </div>
-
-
-      <h2>
-
-        See you at<br>
-
-        <span class="script">
-
-          Bombay Palace
-
-        </span>
-
-      </h2>
-
-
-      <div
-        class="venue-card">
-
-
-        <div
-          style="font-size:36px">
-
-          📍
-
-        </div>
-
-
-        <h3
-          style="margin:8px 0">
-
-          Bombay Palace Restaurant
-          And Banquets
-
-        </h3>
-
-
-        <p
-          class="lead"
-          style="margin-bottom:0">
-
-          200 Advance Blvd,
-          Brampton, ON L6T 4V4
-
-        </p>
-
-
-        <a
-          class="map-btn"
-          target="_blank"
-          rel="noopener"
-          href="https://www.google.com/maps/search/?api=1&query=Bombay+Palace+Restaurant+And+Banquets%2C+200+Advance+Blvd%2C+Brampton%2C+ON+L6T+4V4">
-
-          Get Directions 📍
-
-        </a>
-
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         RSVP
-    ================================================== -->
-
-    <section
-      class="section"
-      id="rsvp">
-
-
-      <div
-        class="rsvp-card">
-
-
-        <div
-          class="kicker">
-
-          We'd love to have you
-
-        </div>
-
-
-        <h2>
-
-          Will you join us?
-
-        </h2>
-
-
-        <p
-          class="lead">
-
-          Please fill in your details
-          so we can plan for you. 💕
-
-        </p>
-
-
-
-        <form
-          id="rsvpForm"
-          onsubmit="submitRSVP(event)"
-          style="
-            text-align:left;
-            margin-top:18px;
-          ">
-
-
-          <label
-            style="
-              display:block;
-              font-size:12px;
-              font-weight:700;
-              margin:12px 0 6px;
-            ">
-
-            Your name
-
-          </label>
-
-
-          <input
-            id="rsvpName"
-            required
-            placeholder="Enter your name"
-            style="
-              width:100%;
-              padding:13px;
-              border:1px solid #e5d8dc;
-              border-radius:14px;
-            ">
-
-
-
-          <label
-            style="
-              display:block;
-              font-size:12px;
-              font-weight:700;
-              margin:12px 0 6px;
-            ">
-
-            Will you attend?
-
-          </label>
-
-
-          <select
-            id="rsvpAttendance"
-            required
-            style="
-              width:100%;
-              padding:13px;
-              border:1px solid #e5d8dc;
-              border-radius:14px;
-              background:#fff;
-            ">
-
-
-            <option value="">
-              Select
-            </option>
-
-
-            <option value="Yes, I’m coming">
-              Yes, I’m coming 💕
-            </option>
-
-
-            <option value="Sorry, can’t attend">
-              Sorry, can’t attend
-            </option>
-
-
-          </select>
-
-
-
-          <label
-            style="
-              display:block;
-              font-size:12px;
-              font-weight:700;
-              margin:12px 0 6px;
-            ">
-
-            Number of guests
-
-          </label>
-
-
-          <select
-            id="rsvpGuests"
-            required
-            style="
-              width:100%;
-              padding:13px;
-              border:1px solid #e5d8dc;
-              border-radius:14px;
-              background:#fff;
-            ">
-
-
-            <option value="1">
-              1
-            </option>
-
-
-            <option value="2">
-              2
-            </option>
-
-
-            <option value="3">
-              3
-            </option>
-
-
-            <option value="4">
-              4
-            </option>
-
-
-            <option value="5+">
-              5+
-            </option>
-
-
-          </select>
-
-
-
-          <button
-            class="primary"
-            type="submit"
-            style="
-              width:100%;
-              margin-top:16px;
-            ">
-
-            Send RSVP 💌
-
-          </button>
-
-
-          <p
-            id="rsvpResult"
-            style="
-              text-align:center;
-              font-size:13px;
-              margin-bottom:0;
-            ">
-          </p>
-
-
-        </form>
-
-
-
-        <!-- =================================================
-             RSVP DEADLINE
-             REPLACES BACK TO TOP
-        ================================================== -->
-
-        <div
-          class="rsvp-actions">
-
-
-          <div
-            class="rsvp-deadline">
-
-            RSVP to Swapan Patel by
-            November-07-2026
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         FOOTER
-    ================================================== -->
 
     <div
-      class="footer">
+      class="name-list"
+      id="nameList">
+    </div>
 
 
-      Made with love for Nikita &amp; Swapan ✨
+  </div>
 
 
-      <br>
+</section>
 
 
-      #SwapNik Baby Shower • November 22, 2026
+<!-- =================================================
+     VENUE
+================================================== -->
+
+<section
+  class="section alt"
+  id="venue">
 
 
-      <br>
+  <div class="kicker">
+    Where we'll meet
+  </div>
 
 
-      <strong>
+  <h2>
 
-        Invitation
+    See you at<br>
 
-      </strong>
+    <span class="script">
+      Bombay Palace
+    </span>
 
+  </h2>
+
+
+  <div class="venue-card">
+
+
+    <div style="font-size:36px">
+      📍
+    </div>
+
+
+    <h3 style="margin:8px 0">
+
+      Bombay Palace Restaurant
+      And Banquets
+
+    </h3>
+
+
+    <p
+      class="lead"
+      style="margin-bottom:0">
+
+      200 Advance Blvd,
+      Brampton, ON L6T 4V4
+
+    </p>
+
+
+    <a
+      class="map-btn"
+      target="_blank"
+      rel="noopener"
+      href="https://www.google.com/maps/search/?api=1&query=Bombay+Palace+Restaurant+And+Banquets%2C+200+Advance+Blvd%2C+Brampton%2C+ON+L6T+4V4">
+
+      Get Directions 📍
+
+    </a>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- =================================================
+     RSVP
+================================================== -->
+
+<section
+  class="section"
+  id="rsvp">
+
+
+  <div class="rsvp-card">
+
+
+    <div class="kicker">
+      We'd love to have you
+    </div>
+
+
+    <h2>
+      Will you join us?
+    </h2>
+
+
+    <p class="lead">
+
+      Please fill in your details
+      so we can plan for you. 💕
+
+    </p>
+
+
+    <form
+      id="rsvpForm"
+      onsubmit="submitRSVP(event)"
+      style="
+        text-align:left;
+        margin-top:18px;
+      ">
+
+
+      <label
+        style="
+          display:block;
+          font-size:12px;
+          font-weight:700;
+          margin:12px 0 6px;
+        ">
+
+        Your name
+
+      </label>
+
+
+      <input
+        id="rsvpName"
+        required
+        placeholder="Enter your name"
+        style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
+        ">
+
+
+      <label
+        style="
+          display:block;
+          font-size:12px;
+          font-weight:700;
+          margin:12px 0 6px;
+        ">
+
+        Will you attend?
+
+      </label>
+
+
+      <select
+        id="rsvpAttendance"
+        required
+        style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
+          background:#fff;
+        ">
+
+
+        <option value="">
+          Select
+        </option>
+
+
+        <option value="Yes, I’m coming">
+          Yes, I’m coming 💕
+        </option>
+
+
+        <option value="Sorry, can’t attend">
+          Sorry, can’t attend
+        </option>
+
+
+      </select>
+
+
+      <label
+        style="
+          display:block;
+          font-size:12px;
+          font-weight:700;
+          margin:12px 0 6px;
+        ">
+
+        Number of guests
+
+      </label>
+
+
+      <select
+        id="rsvpGuests"
+        required
+        style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
+          background:#fff;
+        ">
+
+        <option value="1">
+          1
+        </option>
+
+        <option value="2">
+          2
+        </option>
+
+        <option value="3">
+          3
+        </option>
+
+        <option value="4">
+          4
+        </option>
+
+        <option value="5+">
+          5+
+        </option>
+
+      </select>
+
+
+      <button
+        class="primary"
+        type="submit"
+        style="
+          width:100%;
+          margin-top:16px;
+        ">
+
+        Send RSVP 💌
+
+      </button>
+
+
+      <p
+        id="rsvpResult"
+        style="
+          text-align:center;
+          font-size:13px;
+          margin-bottom:0;
+        ">
+      </p>
+
+
+    </form>
+
+
+    <!-- RSVP DEADLINE -->
+
+    <div class="rsvp-actions">
+
+      <div class="rsvp-deadline">
+
+        RSVP to Swapan Patel by November-07-2026
+
+      </div>
 
     </div>
 
 
   </div>
 
+
+</section>
+
+
+<!-- =================================================
+     FOOTER
+================================================== -->
+
+<div class="footer">
+
+  Made with love for Nikita &amp; Swapan ✨
+
+  <br>
+
+  #SwapNik Baby Shower • November 22, 2026
+
+  <br>
+
+  <strong>
+    Invitation
+  </strong>
+
 </div>
 
+
+</div>
+</div>
 
 
 <!-- =====================================================
      MUSIC
 
-     KEEP music.mp3 IN THE SAME FOLDER AS index.html
+     IMPORTANT:
+     music.mp3 must be in the SAME folder as index.html
 ===================================================== -->
 
 <audio
@@ -1849,7 +1502,6 @@ h2{
 </audio>
 
 
-
 <!-- =====================================================
      GOOGLE APPS SCRIPT
 ===================================================== -->
@@ -1862,8 +1514,8 @@ const GOOGLE_SCRIPT_URL =
 </script>
 
 
-
 <script>
+
 
 /* =====================================================
    OPEN INVITATION + MUSIC
@@ -1874,18 +1526,15 @@ const openInvitation =
     "openInvitation"
   );
 
-
 const invitation =
   document.getElementById(
     "invitation"
   );
 
-
 const cover =
   document.getElementById(
     "cover"
   );
-
 
 const music =
   document.getElementById(
@@ -1896,19 +1545,13 @@ const music =
 let musicStarted = false;
 
 
-/* =====================================================
-   OPEN INVITATION
-===================================================== */
+/* OPEN INVITATION */
 
 openInvitation.addEventListener(
   "click",
   async function(){
 
-
-    /* Start music */
-
     music.volume = 1.0;
-
 
     try{
 
@@ -1920,9 +1563,7 @@ openInvitation.addEventListener(
         "Music started."
       );
 
-    }
-
-    catch(error){
+    }catch(error){
 
       console.log(
         "Music could not start:",
@@ -1932,29 +1573,19 @@ openInvitation.addEventListener(
     }
 
 
-    /* Show invitation */
-
     invitation.classList.add(
       "show"
     );
 
 
-    /* Hide cover */
-
     cover.style.display =
       "none";
 
 
-    /* Scroll to invitation */
-
     window.scrollTo({
-
       top:0,
-
       behavior:"instant"
-
     });
-
 
   }
 );
@@ -1968,51 +1599,36 @@ window.addEventListener(
   "load",
   function(){
 
-
     setTimeout(
       function(){
 
-
         if(!musicStarted){
-
 
           music.volume = 1.0;
 
-
           music.play()
-
             .then(function(){
 
-
               musicStarted = true;
-
 
               console.log(
                 "Automatic music started."
               );
 
-
             })
-
-
             .catch(function(){
-
 
               console.log(
                 "Autoplay blocked. Music will start when OPEN INVITATION is clicked."
               );
 
-
             });
 
-
         }
-
 
       },
       300
     );
-
 
   }
 );
@@ -2026,11 +1642,9 @@ music.addEventListener(
   "error",
   function(){
 
-
     console.error(
       "ERROR: music.mp3 could not be loaded."
     );
-
 
   }
 );
@@ -2041,7 +1655,6 @@ music.addEventListener(
 ===================================================== */
 
 function updateCountdown(){
-
 
   const target =
     new Date(
@@ -2091,7 +1704,6 @@ function updateCountdown(){
       d % 60000 / 1000
     );
 
-
 }
 
 
@@ -2110,7 +1722,6 @@ setInterval(
 
 function postToGoogleSheet(data){
 
-
   if(
     !GOOGLE_SCRIPT_URL ||
     GOOGLE_SCRIPT_URL.includes(
@@ -2118,13 +1729,11 @@ function postToGoogleSheet(data){
     )
   ){
 
-
     return Promise.reject(
       new Error(
         "Google Sheet connection is not configured yet."
       )
     );
-
 
   }
 
@@ -2138,23 +1747,18 @@ function postToGoogleSheet(data){
   return fetch(
     GOOGLE_SCRIPT_URL,
     {
-
       method:"POST",
 
       mode:"no-cors",
 
       headers:{
-
         "Content-Type":
           "application/x-www-form-urlencoded;charset=UTF-8"
-
       },
 
       body
-
     }
   );
-
 
 }
 
@@ -2167,7 +1771,6 @@ function vote(
   choice,
   btn
 ){
-
 
   document
     .querySelectorAll(
@@ -2203,7 +1806,6 @@ function vote(
 
   .then(function(){
 
-
     document.getElementById(
       "voteResult"
     ).textContent =
@@ -2211,21 +1813,17 @@ function vote(
       choice +
       " 💕";
 
-
   })
 
 
   .catch(function(){
-
 
     document.getElementById(
       "voteResult"
     ).textContent =
       "Please connect the Google Sheet first.";
 
-
   });
-
 
 }
 
@@ -2235,7 +1833,6 @@ function vote(
 ===================================================== */
 
 function addName(){
-
 
   const input =
     document.getElementById(
@@ -2265,9 +1862,7 @@ function addName(){
 
   .then(function(){
 
-
     input.value = "";
-
 
     renderNames();
 
@@ -2276,31 +1871,25 @@ function addName(){
       "Thank you! Your baby name idea was submitted. 💕"
     );
 
-
   })
 
 
   .catch(function(){
 
-
     alert(
       "Please connect the Google Sheet first."
     );
 
-
   });
-
 
 }
 
 
 function renderNames(){
 
-
   /*
     Names are saved to Google Sheets.
   */
-
 
 }
 
@@ -2310,7 +1899,6 @@ function renderNames(){
 ===================================================== */
 
 function submitRSVP(e){
-
 
   e.preventDefault();
 
@@ -2356,7 +1944,6 @@ function submitRSVP(e){
 
   .then(function(){
 
-
     result.textContent =
       "Thank you! Your RSVP has been recorded. 💕";
 
@@ -2367,19 +1954,15 @@ function submitRSVP(e){
       )
       .reset();
 
-
   })
 
 
   .catch(function(){
 
-
     result.textContent =
       "Please connect the Google Sheet first.";
 
-
   });
-
 
 }
 
