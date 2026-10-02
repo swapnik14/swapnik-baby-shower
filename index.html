@@ -309,6 +309,75 @@ h2{
 
 
 /* =====================================================
+   NEW HOME / HERO SECTION
+   MATCHES THE SECOND REFERENCE PICTURE
+===================================================== */
+
+.hero-home{
+  min-height:420px;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:55px 20px;
+
+  background:#fffafa;
+}
+
+.hero-home h2{
+  margin:0;
+
+  max-width:470px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:58px;
+
+  line-height:.95;
+
+  font-style:italic;
+
+  font-weight:600;
+
+  color:#3e3035;
+}
+
+.hero-home .hero-title{
+  display:block;
+  margin-top:12px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:58px;
+
+  line-height:.95;
+
+  font-style:italic;
+
+  font-weight:600;
+
+  color:#3e3035;
+}
+
+.hero-home .hero-subtitle{
+  margin-top:38px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:30px;
+
+  font-style:italic;
+
+  color:#5c4d52;
+}
+
+
+/* =====================================================
    CARDS
 ===================================================== */
 
@@ -600,23 +669,29 @@ h2{
   margin-top:18px;
 }
 
-.rsvp-actions a{
-  padding:13px;
+.rsvp-deadline{
+  display:block;
+
+  width:100%;
+
+  padding:14px 12px;
 
   border-radius:14px;
 
-  text-decoration:none;
-
-  font-weight:700;
-}
-
-.scrolltop{
   background:#fff;
 
   color:#8f5367;
 
   border:
     1px solid #e8d8de;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  line-height:1.4;
+
+  text-align:center;
 }
 
 
@@ -709,12 +784,29 @@ h2{
 
   .map-btn,
   .primary,
-  .rsvp-actions a{
+  .rsvp-deadline{
     font-size:16px;
   }
 
   .footer{
     font-size:18px;
+  }
+
+  .hero-home{
+    min-height:430px;
+
+    padding:50px 18px;
+  }
+
+  .hero-home h2,
+  .hero-home .hero-title{
+    font-size:47px;
+  }
+
+  .hero-home .hero-subtitle{
+    margin-top:32px;
+
+    font-size:25px;
   }
 }
 
@@ -736,40 +828,29 @@ h2{
 
     <div class="cover-card">
 
-
       <div class="blessing">
         || Jay Swaminarayn ||
       </div>
-
 
       <div class="cover-flower">
         ✦ ❀ ✦
       </div>
 
-
       <div class="sub">
         A little blessing is on the way
       </div>
-
 
       <h1>
         Nikita &amp; Swapan
       </h1>
 
-
       <div class="script">
         #SwapNik Baby Shower
       </div>
 
-
       <p class="cover-date">
         Sunday • November 22, 2026
       </p>
-
-
-      <!-- =============================================
-           OPEN INVITATION
-      ============================================== -->
 
       <button
         id="openInvitation"
@@ -779,7 +860,6 @@ h2{
         OPEN INVITATION
 
       </button>
-
 
     </div>
 
@@ -824,41 +904,23 @@ h2{
 
     <!-- =================================================
          HOME
+         SECOND PICTURE STYLE
     ================================================== -->
 
     <section
-      class="section"
+      class="hero-home"
       id="home">
 
-      <div class="kicker">
-        With love &amp; joy
-      </div>
-
-
       <h2>
-
-        Welcome to<br>
-
-        <span class="script">
-          SwapNik's
-        </span><br>
-
-        Baby Shower
-
+        Nikita &amp; Swapan's
       </h2>
 
+      <span class="hero-title">
+        Baby Shower
+      </span>
 
-      <p class="lead">
-
-        A tiny miracle is joining our family,
-        and we'd love to celebrate this beautiful
-        chapter with you.
-
-      </p>
-
-
-      <div class="decor">
-        ✦ ❀ ✦
+      <div class="hero-subtitle">
+        Join us for the sweet adventure!
       </div>
 
     </section>
@@ -873,22 +935,16 @@ h2{
       class="section alt"
       id="details">
 
-
       <div class="kicker">
         Save the date
       </div>
 
-
       <h2>
-
         Come celebrate<br>
         with us
-
       </h2>
 
-
       <div class="event-card">
-
 
         <div class="event-row">
 
@@ -909,7 +965,6 @@ h2{
           </div>
 
         </div>
-
 
 
         <div class="event-row">
@@ -933,7 +988,6 @@ h2{
         </div>
 
 
-
         <div class="event-row">
 
           <div class="icon">
@@ -954,7 +1008,6 @@ h2{
 
         </div>
 
-
       </div>
 
 
@@ -963,15 +1016,12 @@ h2{
 
       <div class="countdown">
 
-
         <div class="timebox">
 
           <div
             class="num"
             id="days">
-
             --
-
           </div>
 
           <div class="unit">
@@ -986,9 +1036,7 @@ h2{
           <div
             class="num"
             id="hours">
-
             --
-
           </div>
 
           <div class="unit">
@@ -1003,9 +1051,7 @@ h2{
           <div
             class="num"
             id="mins">
-
             --
-
           </div>
 
           <div class="unit">
@@ -1020,9 +1066,7 @@ h2{
           <div
             class="num"
             id="secs">
-
             --
-
           </div>
 
           <div class="unit">
@@ -1030,7 +1074,6 @@ h2{
           </div>
 
         </div>
-
 
       </div>
 
@@ -1046,11 +1089,9 @@ h2{
       class="section"
       id="guess">
 
-
       <div class="kicker">
         A little game
       </div>
-
 
       <h2>
 
@@ -1062,7 +1103,6 @@ h2{
 
       </h2>
 
-
       <p class="lead">
 
         Make your guess and let us know
@@ -1071,55 +1111,42 @@ h2{
       </p>
 
 
-
       <div class="poll-card">
 
-
         <div class="poll-options">
-
 
           <button
             class="option"
             onclick="vote('Team Boy', this)">
 
-
             <span class="team-emoji boy">
               👦🏻
             </span>
 
-
             <br>
-
 
             <b>
               Team Boy
             </b>
 
-
           </button>
-
 
 
           <button
             class="option"
             onclick="vote('Team Girl', this)">
 
-
             <span class="team-emoji girl">
               👧🏻
             </span>
 
-
             <br>
-
 
             <b>
               Team Girl
             </b>
 
-
           </button>
-
 
         </div>
 
@@ -1134,7 +1161,6 @@ h2{
           ">
         </p>
 
-
       </div>
 
 
@@ -1143,11 +1169,9 @@ h2{
 
       <div class="poll-card">
 
-
         <div class="kicker">
           Your idea
         </div>
-
 
         <h3
           style="
@@ -1164,11 +1188,9 @@ h2{
 
         <div class="names">
 
-
           <input
             id="nameInput"
             placeholder="Type a name">
-
 
           <button
             onclick="addName()">
@@ -1176,7 +1198,6 @@ h2{
             Add
 
           </button>
-
 
         </div>
 
@@ -1186,9 +1207,7 @@ h2{
           id="nameList">
         </div>
 
-
       </div>
-
 
     </section>
 
@@ -1202,11 +1221,9 @@ h2{
       class="section alt"
       id="venue">
 
-
       <div class="kicker">
         Where we'll meet
       </div>
-
 
       <h2>
 
@@ -1221,11 +1238,9 @@ h2{
 
       <div class="venue-card">
 
-
         <div style="font-size:36px">
           📍
         </div>
-
 
         <h3 style="margin:8px 0">
 
@@ -1255,9 +1270,7 @@ h2{
 
         </a>
 
-
       </div>
-
 
     </section>
 
@@ -1448,23 +1461,22 @@ h2{
 
 
 
+        <!-- =================================================
+             RSVP DEADLINE
+        ================================================== -->
+
         <div class="rsvp-actions">
 
+          <div class="rsvp-deadline">
 
-          <a
-            class="scrolltop"
-            href="#top">
+            RSVP to Swapan Patel by November-07-2026
 
-            Back to top ↑
-
-          </a>
-
+          </div>
 
         </div>
 
 
       </div>
-
 
     </section>
 
@@ -1562,18 +1574,11 @@ let musicStarted = false;
 
 /*
   OPEN INVITATION
-
-  This is a real user click, so browsers
-  normally allow the MP3 to start here.
 */
 
 openInvitation.addEventListener(
   "click",
   async function(){
-
-    /*
-      Start music first.
-    */
 
     music.volume = 1.0;
 
@@ -1597,26 +1602,14 @@ openInvitation.addEventListener(
     }
 
 
-    /*
-      Show invitation.
-    */
-
     invitation.classList.add(
       "show"
     );
 
 
-    /*
-      Hide cover.
-    */
-
     cover.style.display =
       "none";
 
-
-    /*
-      Scroll to top of invitation.
-    */
 
     window.scrollTo({
       top:0,
