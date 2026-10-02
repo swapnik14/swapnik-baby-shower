@@ -341,7 +341,10 @@ h2{
   border:1px solid #e8d8de
 }
 
-/* MUSIC BUTTON */
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
 .music{
   position:fixed;
   right:18px;
@@ -466,6 +469,10 @@ h2{
 
 <div class="page" id="top">
 
+  <!-- ===================================================
+       COVER
+  ==================================================== -->
+
   <section class="cover" id="cover">
 
     <div class="cover-card cover-simple">
@@ -494,8 +501,11 @@ h2{
         Sunday • November 22, 2026
       </p>
 
+      <!-- MUSIC STARTS FROM THIS BUTTON TAP -->
+
       <button
         class="open-btn"
+        type="button"
         onclick="openInvitation()">
 
         Open Invitation ✨
@@ -511,6 +521,10 @@ h2{
   </section>
 
 
+  <!-- ===================================================
+       INVITATION
+  ==================================================== -->
+
   <div id="invitation" class="hidden">
 
     <nav class="nav">
@@ -521,6 +535,8 @@ h2{
       <a href="#rsvp">RSVP</a>
     </nav>
 
+
+    <!-- HOME -->
 
     <section class="section" id="home">
 
@@ -545,6 +561,8 @@ h2{
     </section>
 
 
+    <!-- DETAILS -->
+
     <section class="section alt" id="details">
 
       <div class="kicker">
@@ -559,42 +577,53 @@ h2{
       <div class="event-card">
 
         <div class="event-row">
+
           <div class="icon">📅</div>
 
           <div>
             <div class="label">Date</div>
+
             <div class="value">
               Sunday, November 22, 2026
             </div>
           </div>
+
         </div>
 
 
         <div class="event-row">
+
           <div class="icon">⏰</div>
 
           <div>
             <div class="label">Time</div>
+
             <div class="value">
               10:00 AM onwards
             </div>
           </div>
+
         </div>
 
 
         <div class="event-row">
+
           <div class="icon">👶</div>
 
           <div>
             <div class="label">Celebrating</div>
+
             <div class="value">
               Nikita &amp; Swapan
             </div>
           </div>
+
         </div>
 
       </div>
 
+
+      <!-- COUNTDOWN -->
 
       <div class="countdown">
 
@@ -623,6 +652,8 @@ h2{
     </section>
 
 
+    <!-- GUESS -->
+
     <section class="section" id="guess">
 
       <div class="kicker">
@@ -639,12 +670,15 @@ h2{
       </p>
 
 
+      <!-- BOY / GIRL -->
+
       <div class="poll-card">
 
         <div class="poll-options">
 
           <button
             class="option"
+            type="button"
             onclick="vote('Team Boy', this)">
 
             <span class="team-emoji boy">
@@ -660,6 +694,7 @@ h2{
 
           <button
             class="option"
+            type="button"
             onclick="vote('Team Girl', this)">
 
             <span class="team-emoji girl">
@@ -682,6 +717,8 @@ h2{
       </div>
 
 
+      <!-- BABY NAME -->
+
       <div class="poll-card">
 
         <div class="kicker">
@@ -696,10 +733,15 @@ h2{
 
           <input
             id="nameInput"
+            type="text"
             placeholder="Type a name">
 
-          <button onclick="addName()">
+          <button
+            type="button"
+            onclick="addName()">
+
             Add
+
           </button>
 
         </div>
@@ -713,6 +755,8 @@ h2{
 
     </section>
 
+
+    <!-- VENUE -->
 
     <section class="section alt" id="venue">
 
@@ -758,6 +802,8 @@ h2{
     </section>
 
 
+    <!-- RSVP -->
+
     <section class="section" id="rsvp">
 
       <div class="rsvp-card">
@@ -789,6 +835,7 @@ h2{
 
           <input
             id="rsvpName"
+            type="text"
             required
             placeholder="Enter your name"
             style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px">
@@ -837,7 +884,7 @@ h2{
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5+</option>
+            <option value="5+">5+</option>
 
           </select>
 
@@ -877,12 +924,16 @@ h2{
     </section>
 
 
+    <!-- FOOTER -->
+
     <div class="footer">
 
       Made with love for Nikita &amp; Swapan ✨
+
       <br>
 
       SwapNik Baby Shower • November 22, 2026
+
       <br>
 
       <strong>Invitation</strong>
@@ -896,7 +947,10 @@ h2{
 
 <!-- =====================================================
      MUSIC PLAYER
-     Put music.mp3 in the SAME folder as this HTML file.
+
+     IMPORTANT:
+     Upload a REAL music.mp3 file to GitHub.
+     It must be in the SAME folder as index.html.
 ===================================================== -->
 
 <audio
@@ -908,10 +962,10 @@ h2{
     src="./music.mp3"
     type="audio/mpeg">
 
-  Your browser does not support audio.
-
 </audio>
 
+
+<!-- FLOATING MUSIC BUTTON -->
 
 <button
   id="musicBtn"
@@ -950,37 +1004,54 @@ const musicBtn =
   document.getElementById("musicBtn");
 
 
+/*
+  Start music.
+*/
+
+function startMusic(){
+
+  music.volume = 1.0;
+
+  music.play()
+
+    .then(() => {
+
+      musicBtn.textContent = "🔊";
+
+      musicBtn.setAttribute(
+        "aria-label",
+        "Pause music"
+      );
+
+      console.log(
+        "Music started successfully"
+      );
+
+    })
+
+    .catch((error) => {
+
+      console.log(
+        "Music could not start:",
+        error
+      );
+
+      musicBtn.textContent = "🎵";
+
+    });
+
+}
+
+
+/*
+  Floating music button.
+*/
+
 function toggleMusic(){
 
   if(music.paused){
 
-    music.load();
-
-    music.play()
-
-      .then(() => {
-
-        musicBtn.textContent = "🔊";
-
-        musicBtn.setAttribute(
-          "aria-label",
-          "Pause music"
-        );
-
-      })
-
-      .catch((error) => {
-
-        console.error(
-          "Music failed:",
-          error
-        );
-
-        alert(
-          "Music could not be played. Please check that music.mp3 is a valid MP3 file."
-        );
-
-      });
+    startMusic();
 
   }else{
 
@@ -998,6 +1069,10 @@ function toggleMusic(){
 }
 
 
+/*
+  When music ends.
+*/
+
 music.addEventListener(
   "ended",
   () => {
@@ -1008,12 +1083,16 @@ music.addEventListener(
 );
 
 
+/*
+  If MP3 cannot be loaded.
+*/
+
 music.addEventListener(
   "error",
   () => {
 
     console.error(
-      "Could not load music.mp3"
+      "ERROR: music.mp3 could not be loaded."
     );
 
     musicBtn.textContent = "⚠️";
@@ -1033,9 +1112,15 @@ function openInvitation(){
 
   opened = true;
 
+
+  /*
+    Open invitation.
+  */
+
   document
     .getElementById("invitation")
     .classList.remove("hidden");
+
 
   document
     .getElementById("cover")
@@ -1043,38 +1128,17 @@ function openInvitation(){
 
 
   /*
-    Start music directly from the user's
-    Open Invitation button click.
+    IMPORTANT:
+    Start music directly from the
+    user's Open Invitation button tap.
   */
 
-  music.volume = 1.0;
+  startMusic();
 
-  music.load();
 
-  music.play()
-
-    .then(() => {
-
-      musicBtn.textContent = "🔊";
-
-    })
-
-    .catch((error) => {
-
-      console.log(
-        "Automatic music start blocked:",
-        error
-      );
-
-      /*
-        The visitor can now press the
-        floating 🎵 button manually.
-      */
-
-      musicBtn.textContent = "🎵";
-
-    });
-
+  /*
+    Scroll to invitation.
+  */
 
   document
     .getElementById("invitation")
@@ -1096,8 +1160,10 @@ function updateCountdown(){
       "2026-11-22T10:00:00-05:00"
     ).getTime();
 
+
   const now =
     Date.now();
+
 
   const d =
     Math.max(
@@ -1106,25 +1172,33 @@ function updateCountdown(){
     );
 
 
-  document.getElementById("days").textContent =
+  document.getElementById(
+    "days"
+  ).textContent =
     Math.floor(
       d / 86400000
     );
 
 
-  document.getElementById("hours").textContent =
+  document.getElementById(
+    "hours"
+  ).textContent =
     Math.floor(
       d % 86400000 / 3600000
     );
 
 
-  document.getElementById("mins").textContent =
+  document.getElementById(
+    "mins"
+  ).textContent =
     Math.floor(
       d % 3600000 / 60000
     );
 
 
-  document.getElementById("secs").textContent =
+  document.getElementById(
+    "secs"
+  ).textContent =
     Math.floor(
       d % 60000 / 1000
     );
@@ -1133,6 +1207,7 @@ function updateCountdown(){
 
 
 updateCountdown();
+
 
 setInterval(
   updateCountdown,
@@ -1205,7 +1280,9 @@ function vote(
 
 
   document
-    .getElementById("voteResult")
+    .getElementById(
+      "voteResult"
+    )
     .textContent =
       "Saving your guess… 💕";
 
@@ -1221,7 +1298,9 @@ function vote(
   .then(() => {
 
     document
-      .getElementById("voteResult")
+      .getElementById(
+        "voteResult"
+      )
       .textContent =
         "Your guess: " +
         choice +
@@ -1232,7 +1311,9 @@ function vote(
   .catch(() => {
 
     document
-      .getElementById("voteResult")
+      .getElementById(
+        "voteResult"
+      )
       .textContent =
         "Please connect the Google Sheet first.";
 
@@ -1251,6 +1332,7 @@ function addName(){
     document.getElementById(
       "nameInput"
     );
+
 
   const value =
     input.value.trim();
@@ -1374,6 +1456,3 @@ function submitRSVP(e){
 
 </body>
 </html>
-
-
-
