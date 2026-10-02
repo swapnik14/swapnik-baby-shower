@@ -1,1119 +1,1125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7e9ee">
-<title>Nikita & Swapan | SwapNik Baby Shower</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Nikita & Swapan | #SwapNik Baby Shower</title>
+
 
 <style>
-:root{
-  --ink:#3e3035;
-  --rose:#b86f83;
-  --rose2:#e8b7c3;
-  --cream:#fffaf7;
-  --gold:#b68a54;
-  --lav:#e9e4f5;
-  --green:#a8c5b2;
-}
+
+/* =========================
+   BASIC RESET
+========================= */
 
 *{
   box-sizing:border-box;
-  scroll-behavior:smooth
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-  margin:0;
-  background:#171729;
-  color:var(--ink);
-  font-family:"DM Sans",sans-serif
+  font-family:Arial, sans-serif;
+  background:#fff8f2;
+  color:#333;
+  line-height:1.6;
 }
 
-button,a{
-  font:inherit
-}
 
-input,select,button{
-  font-family:"DM Sans",sans-serif
-}
-
-.page{
-  max-width:520px;
-  margin:auto;
-  background:var(--cream);
-  min-height:100vh;
-  overflow:hidden;
-  position:relative
-}
+/* =========================
+   COVER
+========================= */
 
 .cover{
+
   min-height:100vh;
+
   display:flex;
-  flex-direction:column;
+
   align-items:center;
+
   justify-content:center;
-  padding:28px 20px 34px;
-  position:relative;
+
   text-align:center;
+
+  padding:30px 20px;
+
   background:
-   radial-gradient(circle at 15% 15%,rgba(255,255,255,.95) 0 1px,transparent 2px),
-   radial-gradient(circle at 75% 25%,rgba(255,255,255,.8) 0 1px,transparent 2px),
-   radial-gradient(circle at 30% 80%,rgba(255,255,255,.7) 0 1px,transparent 2px),
-   linear-gradient(145deg,#24233d,#111122);
-  background-size:150px 150px,190px 190px,220px 220px,auto;
+    linear-gradient(
+      135deg,
+      #fff1e8,
+      #ffe4ec
+    );
+
 }
 
-.cover-card{
-  width:min(100%,430px);
-  background:#fff;
-  border-radius:28px;
-  padding:18px 18px 28px;
-  box-shadow:0 25px 70px rgba(0,0,0,.35);
-  position:relative
+.cover-content{
+
+  width:100%;
+
+  max-width:650px;
+
 }
 
 .cover h1{
-  font-family:"Cormorant Garamond",serif;
+
+  font-size:22px;
+
+  margin-bottom:22px;
+
+}
+
+.cover h2{
+
   font-size:34px;
-  line-height:1.05;
-  margin:18px 0 4px;
-  color:#8c5265;
-  font-weight:700
+
+  margin-bottom:12px;
+
 }
 
-.cover .sub{
-  font-size:15px;
-  letter-spacing:2.5px;
-  text-transform:uppercase;
-  color:#8b777c
+.cover h3{
+
+  font-size:25px;
+
+  margin-bottom:18px;
+
 }
 
-.open-btn{
-  border:0;
-  border-radius:999px;
-  padding:14px 30px;
-  margin-top:18px;
-  background:#a8667b;
-  color:white;
-  box-shadow:0 10px 25px rgba(168,102,123,.3);
-  cursor:pointer;
-  font-weight:700
+.cover p{
+
+  font-size:18px;
+
 }
 
-.hint{
-  color:#d7ced4;
-  font-size:14px;
-  margin-top:15px
+
+/* =========================
+   INVITATION
+========================= */
+
+#invitation{
+
+  display:block;
+
 }
 
-.section{
-  padding:64px 24px;
-  position:relative
+section{
+
+  padding:55px 20px;
+
+  text-align:center;
+
 }
 
-.section.alt{
-  background:#f7edf1
-}
+.container{
 
-.kicker{
-  text-transform:uppercase;
-  letter-spacing:2.5px;
-  font-size:14px;
-  color:var(--rose);
-  font-weight:700
+  max-width:850px;
+
+  margin:auto;
+
 }
 
 h2{
-  font-family:"Cormorant Garamond",serif;
-  font-size:42px;
-  line-height:.95;
-  margin:10px 0 18px
+
+  margin-bottom:20px;
+
+  font-size:30px;
+
 }
 
-.script{
-  font-family:"Cormorant Garamond",serif;
-  color:#a15d73;
-  font-size:40px;
-  font-weight:700
-}
+.card{
 
-.lead{
-  line-height:1.75;
-  color:#6c5d63;
-  font-size:17px
-}
-
-.event-card,
-.venue-card,
-.rsvp-card,
-.poll-card{
   background:#fff;
-  border-radius:24px;
-  padding:22px;
-  box-shadow:0 12px 35px rgba(98,65,77,.09);
-  margin-top:20px
+
+  padding:28px;
+
+  margin:20px auto;
+
+  border-radius:20px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0,0,0,.08);
+
+  max-width:700px;
+
 }
 
-.event-row{
+.date{
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  margin:12px 0;
+
+}
+
+.time{
+
+  font-size:19px;
+
+  margin-bottom:15px;
+
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown{
+
   display:flex;
-  gap:14px;
-  padding:15px 0;
-  border-bottom:1px solid #eee3e6
-}
 
-.event-row:last-child{
-  border:0
-}
-
-.icon{
-  font-size:23px;
-  width:32px
-}
-
-.label{
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  color:#9b7e88
-}
-
-.value{
-  font-weight:700;
-  margin-top:3px
-}
-
-.countdown{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:8px;
-  margin-top:22px
-}
-
-.timebox{
-  background:#fff;
-  border-radius:18px;
-  padding:13px 4px;
-  text-align:center;
-  box-shadow:0 8px 25px rgba(75,50,60,.08)
-}
-
-.num{
-  font-size:27px;
-  font-weight:700;
-  color:#a15d73
-}
-
-.unit{
-  font-size:11px;
-  letter-spacing:1px;
-  color:#9b7e88;
-  text-transform:uppercase
-}
-
-.decor{
-  font-size:28px;
-  letter-spacing:10px;
-  color:#b68a54
-}
-
-.poll-options{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:15px
-}
-
-.team-emoji{
-  display:inline-flex;
-  align-items:center;
   justify-content:center;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  font-size:31px;
-  margin-bottom:8px
-}
 
-.team-emoji.boy{
-  background:#e5f3ff;
-  box-shadow:inset 0 0 0 2px #a9d8f5
-}
+  gap:12px;
 
-.team-emoji.girl{
-  background:#ffe7ef;
-  box-shadow:inset 0 0 0 2px #f3b3c6
-}
-
-.option{
-  border:1px solid #eadce1;
-  background:#fff8fa;
-  border-radius:18px;
-  padding:15px;
-  text-align:center;
-  cursor:pointer;
-  transition:.2s
-}
-
-.option:hover,
-.option.selected{
-  border-color:#b86f83;
-  background:#f9e8ee;
-  transform:translateY(-2px)
-}
-
-.names{
-  display:flex;
-  gap:8px;
-  margin-top:14px
-}
-
-.names input{
-  flex:1;
-  min-width:0;
-  border:1px solid #e5d8dc;
-  border-radius:14px;
-  padding:14px;
-  font-size:16px
-}
-
-.names button,
-.primary{
-  border:0;
-  border-radius:14px;
-  background:#a8667b;
-  color:#fff;
-  padding:12px 15px;
-  font-weight:700;
-  cursor:pointer
-}
-
-.name-list{
-  margin-top:12px;
-  display:flex;
   flex-wrap:wrap;
-  gap:8px
+
+  margin-top:25px;
+
 }
 
-.tag{
-  background:#f3e4e9;
-  border-radius:999px;
-  padding:7px 11px;
-  font-size:12px
-}
+.time-box{
 
-.map-btn{
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  background:#2f4650;
-  color:#fff;
-  border-radius:14px;
-  padding:13px;
-  margin-top:15px;
-  font-weight:700
-}
-
-.rsvp-card{
-  background:linear-gradient(145deg,#fff,#f7edf1);
-  text-align:center
-}
-
-.rsvp-actions{
-  display:grid;
-  gap:10px;
-  margin-top:18px
-}
-
-.rsvp-actions a{
-  padding:13px;
-  border-radius:14px;
-  text-decoration:none;
-  font-weight:700
-}
-
-.scrolltop{
   background:#fff;
-  color:#8f5367;
-  border:1px solid #e8d8de
+
+  padding:15px 12px;
+
+  min-width:78px;
+
+  border-radius:15px;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0,0,0,.08);
+
 }
 
-/* MUSIC BUTTON */
-.music{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  border:0;
-  background:#a8667b;
-  color:#fff;
-  box-shadow:0 10px 30px rgba(0,0,0,.2);
-  z-index:999;
+.time-box strong{
+
+  display:block;
+
+  font-size:25px;
+
+}
+
+.time-box span{
+
+  font-size:13px;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+
+  border:none;
+
+  padding:13px 22px;
+
+  border-radius:25px;
+
   cursor:pointer;
-  font-size:20px
+
+  font-size:16px;
+
+  margin:5px;
+
 }
 
-.nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:rgba(255,250,247,.92);
-  backdrop-filter:blur(12px);
+
+/* =========================
+   POLL
+========================= */
+
+.poll-buttons{
+
   display:flex;
-  justify-content:space-around;
-  padding:11px 5px;
-  border-bottom:1px solid #eadde1
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+
 }
 
-.nav a{
-  font-size:12px;
-  text-decoration:none;
-  color:#775e67;
-  font-weight:700
+.poll-buttons button{
+
+  background:#f3d8df;
+
 }
 
-.hidden{
-  display:none
+
+/* =========================
+   FORM
+========================= */
+
+input,
+select,
+textarea{
+
+  width:100%;
+
+  padding:13px;
+
+  margin:8px 0;
+
+  border:1px solid #ddd;
+
+  border-radius:10px;
+
+  font-size:16px;
+
+  font-family:Arial, sans-serif;
+
 }
 
-.footer{
+textarea{
+
+  resize:vertical;
+
+}
+
+form{
+
+  max-width:600px;
+
+  margin:auto;
+
+}
+
+.submit-btn{
+
+  background:#333;
+
+  color:#fff;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+  padding:35px 20px;
+
   text-align:center;
-  padding:40px 20px 75px;
-  background:#f7edf1;
-  color:#856f77;
-  font-size:17px;
-  line-height:1.7;
-  font-weight:600
+
+  background:#333;
+
+  color:#fff;
+
 }
 
-@media(max-width:520px){
+footer p{
 
-  .cover{
-    padding:24px 16px 30px
-  }
+  margin:5px 0;
 
-  .cover-card{
-    padding:22px 18px 30px;
-    border-radius:24px
-  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
 
   .cover h1{
-    font-size:34px
+
+    font-size:20px;
+
   }
 
-  .cover .script{
-    font-size:35px
+  .cover h2{
+
+    font-size:28px;
+
   }
 
-  .cover .sub{
-    font-size:14px;
-    letter-spacing:2px
+  .cover h3{
+
+    font-size:22px;
+
   }
 
-  .cover-date{
-    font-size:17px
-  }
+  section{
 
-  .open-btn{
-    font-size:16px;
-    padding:15px 28px
-  }
+    padding:45px 15px;
 
-  .section{
-    padding:54px 20px
   }
 
   h2{
-    font-size:40px
+
+    font-size:27px;
+
   }
 
-  .script{
-    font-size:36px
+  .card{
+
+    padding:22px 18px;
+
   }
 
-  .lead{
-    font-size:17px
-  }
-
-  .value{
-    font-size:16px
-  }
-
-  .option{
-    font-size:16px;
-    padding:17px 12px
-  }
-
-  .map-btn,
-  .primary,
-  .rsvp-actions a{
-    font-size:16px
-  }
-
-  .footer{
-    font-size:18px
-  }
 }
+
 </style>
+
 </head>
+
 
 <body>
 
-<div class="page" id="top">
 
-  <section class="cover" id="cover">
+<!-- ==================================================
+     BACKGROUND MUSIC
 
-    <div class="cover-card cover-simple">
+     IMPORTANT:
+     Keep music.mp3 in the SAME folder as index.html.
 
-      <div class="blessing">
-        || Jay Swaminarayn ||
-      </div>
+     There is intentionally NO music button or symbol.
+================================================== -->
 
-      <div class="cover-flower">
-        ✦ ❀ ✦
-      </div>
+<audio id="music"
+       loop
+       preload="auto">
 
-      <div class="sub">
-        A little blessing is on the way
-      </div>
+  <source
+    src="./music.mp3"
+    type="audio/mpeg">
 
-      <h1>
-        Nikita &amp; Swapan
-      </h1>
+</audio>
 
-      <div class="script">
-        SwapNik Baby Shower
-      </div>
 
-      <p class="cover-date">
-        Sunday • November 22, 2026
-      </p>
 
-    </div>
+<!-- ==================================================
+     COVER
+================================================== -->
 
-  </section>
+<div class="cover">
 
+  <div class="cover-content">
 
-  <!-- INVITATION NOW OPENS DIRECTLY -->
+    <h1>
+      || Jay Swaminarayn ||
+    </h1>
 
-  <div id="invitation">
+    <h2>
+      A little blessing is on the way
+    </h2>
 
-    <nav class="nav">
-      <a href="#home">HOME</a>
-      <a href="#details">DETAILS</a>
-      <a href="#guess">GUESS</a>
-      <a href="#venue">VENUE</a>
-      <a href="#rsvp">RSVP</a>
-    </nav>
+    <h3>
+      Nikita & Swapan
+    </h3>
 
+    <p>
+      #SwapNik Baby Shower
+    </p>
 
-    <section class="section" id="home">
+    <p class="date">
+      Sunday, November 22, 2026
+    </p>
 
-      <div class="kicker">
-        With love &amp; joy
-      </div>
-
-      <h2>
-        Welcome to<br>
-        <span class="script">SwapNik's</span><br>
-        Baby Shower
-      </h2>
-
-      <p class="lead">
-        A tiny miracle is joining our family, and we'd love to celebrate this beautiful chapter with you.
-      </p>
-
-      <div class="decor">
-        ✦ ❀ ✦
-      </div>
-
-    </section>
-
-
-    <section class="section alt" id="details">
-
-      <div class="kicker">
-        Save the date
-      </div>
-
-      <h2>
-        Come celebrate<br>
-        with us
-      </h2>
-
-      <div class="event-card">
-
-        <div class="event-row">
-          <div class="icon">📅</div>
-
-          <div>
-            <div class="label">Date</div>
-            <div class="value">
-              Sunday, November 22, 2026
-            </div>
-          </div>
-        </div>
-
-
-        <div class="event-row">
-          <div class="icon">⏰</div>
-
-          <div>
-            <div class="label">Time</div>
-            <div class="value">
-              10:00 AM onwards
-            </div>
-          </div>
-        </div>
-
-
-        <div class="event-row">
-          <div class="icon">👶</div>
-
-          <div>
-            <div class="label">Celebrating</div>
-            <div class="value">
-              Nikita &amp; Swapan
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="countdown">
-
-        <div class="timebox">
-          <div class="num" id="days">--</div>
-          <div class="unit">Days</div>
-        </div>
-
-        <div class="timebox">
-          <div class="num" id="hours">--</div>
-          <div class="unit">Hours</div>
-        </div>
-
-        <div class="timebox">
-          <div class="num" id="mins">--</div>
-          <div class="unit">Minutes</div>
-        </div>
-
-        <div class="timebox">
-          <div class="num" id="secs">--</div>
-          <div class="unit">Seconds</div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="section" id="guess">
-
-      <div class="kicker">
-        A little game
-      </div>
-
-      <h2>
-        Team Boy or<br>
-        <span class="script">Team Girl?</span>
-      </h2>
-
-      <p class="lead">
-        Make your guess and let us know what your heart says!
-      </p>
-
-
-      <div class="poll-card">
-
-        <div class="poll-options">
-
-          <button
-            class="option"
-            onclick="vote('Team Boy', this)">
-
-            <span class="team-emoji boy">
-              👦🏻
-            </span>
-
-            <br>
-
-            <b>Team Boy</b>
-
-          </button>
-
-
-          <button
-            class="option"
-            onclick="vote('Team Girl', this)">
-
-            <span class="team-emoji girl">
-              👧🏻
-            </span>
-
-            <br>
-
-            <b>Team Girl</b>
-
-          </button>
-
-        </div>
-
-        <p
-          id="voteResult"
-          style="font-size:15px;text-align:center;color:#8b6975;margin-bottom:0">
-        </p>
-
-      </div>
-
-
-      <div class="poll-card">
-
-        <div class="kicker">
-          Your idea
-        </div>
-
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;margin:8px 0">
-          Suggest a baby name 💕
-        </h3>
-
-        <div class="names">
-
-          <input
-            id="nameInput"
-            placeholder="Type a name">
-
-          <button onclick="addName()">
-            Add
-          </button>
-
-        </div>
-
-        <div
-          class="name-list"
-          id="nameList">
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="section alt" id="venue">
-
-      <div class="kicker">
-        Where we'll meet
-      </div>
-
-      <h2>
-        See you at<br>
-        <span class="script">Bombay Palace</span>
-      </h2>
-
-      <div class="venue-card">
-
-        <div style="font-size:36px">
-          📍
-        </div>
-
-        <h3 style="margin:8px 0">
-          Bombay Palace Restaurant And Banquets
-        </h3>
-
-        <p
-          class="lead"
-          style="margin-bottom:0">
-
-          200 Advance Blvd, Brampton, ON L6T 4V4
-
-        </p>
-
-        <a
-          class="map-btn"
-          target="_blank"
-          rel="noopener"
-          href="https://www.google.com/maps/search/?api=1&query=Bombay+Palace+Restaurant+And+Banquets%2C+200+Advance+Blvd%2C+Brampton%2C+ON+L6T+4V4">
-
-          Get Directions 📍
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <section class="section" id="rsvp">
-
-      <div class="rsvp-card">
-
-        <div class="kicker">
-          We'd love to have you
-        </div>
-
-        <h2>
-          Will you join us?
-        </h2>
-
-        <p class="lead">
-          Please fill in your details so we can plan for you. 💕
-        </p>
-
-
-        <form
-          id="rsvpForm"
-          onsubmit="submitRSVP(event)"
-          style="text-align:left;margin-top:18px">
-
-          <label
-            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
-
-            Your name
-
-          </label>
-
-          <input
-            id="rsvpName"
-            required
-            placeholder="Enter your name"
-            style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px">
-
-
-          <label
-            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
-
-            Will you attend?
-
-          </label>
-
-          <select
-            id="rsvpAttendance"
-            required
-            style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px;background:#fff">
-
-            <option value="">
-              Select
-            </option>
-
-            <option value="Yes, I’m coming">
-              Yes, I’m coming 💕
-            </option>
-
-            <option value="Sorry, can’t attend">
-              Sorry, can’t attend
-            </option>
-
-          </select>
-
-
-          <label
-            style="display:block;font-size:12px;font-weight:700;margin:12px 0 6px">
-
-            Number of guests
-
-          </label>
-
-          <select
-            id="rsvpGuests"
-            required
-            style="width:100%;padding:13px;border:1px solid #e5d8dc;border-radius:14px;background:#fff">
-
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5+">5+</option>
-
-          </select>
-
-
-          <button
-            class="primary"
-            type="submit"
-            style="width:100%;margin-top:16px">
-
-            Send RSVP 💌
-
-          </button>
-
-
-          <p
-            id="rsvpResult"
-            style="text-align:center;font-size:13px;margin-bottom:0">
-          </p>
-
-        </form>
-
-
-        <div class="rsvp-actions">
-
-          <a
-            class="scrolltop"
-            href="#top">
-
-            Back to top ↑
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <div class="footer">
-
-      Made with love for Nikita &amp; Swapan ✨
-      <br>
-
-      SwapNik Baby Shower • November 22, 2026
-      <br>
-
-      <strong>Invitation</strong>
-
-    </div>
+    <p>
+      We would love to celebrate this special day with you.
+    </p>
 
   </div>
 
 </div>
 
 
-<!-- =====================================================
-     MUSIC PLAYER
-     music.mp3 MUST be in the SAME folder as index.html
-===================================================== -->
 
-<audio
-  id="music"
-  loop
-  preload="auto">
+<!-- ==================================================
+     MAIN INVITATION
+================================================== -->
 
-  <source
-    src="./music.mp3"
-    type="audio/mpeg">
-
-  Your browser does not support audio.
-
-</audio>
+<div id="invitation">
 
 
-<button
-  id="musicBtn"
-  class="music"
-  type="button"
-  aria-label="Play music"
-  onclick="toggleMusic()">
+  <!-- =========================
+       HOME
+  ========================= -->
 
-  🎵
+  <section id="home">
 
-</button>
+    <div class="container">
+
+      <h2>
+        You're Invited
+      </h2>
+
+      <div class="card">
+
+        <h3>
+          Nikita & Swapan
+        </h3>
+
+        <br>
+
+        <p>
+          are delighted to invite you to celebrate
+          the upcoming arrival of their little one.
+        </p>
+
+        <p class="date">
+          Sunday, November 22, 2026
+        </p>
+
+        <p class="time">
+          10:00 AM onwards
+        </p>
+
+        <p>
+          #SwapNik Baby Shower
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
-<!-- =====================================================
-     GOOGLE APPS SCRIPT
-===================================================== -->
+
+  <!-- =========================
+       DETAILS
+  ========================= -->
+
+  <section id="details">
+
+    <div class="container">
+
+      <h2>
+        Baby Shower Details
+      </h2>
+
+      <div class="card">
+
+        <p>
+          Come join us for a beautiful celebration
+          filled with love, laughter and blessings
+          for the parents-to-be.
+        </p>
+
+        <br>
+
+        <p>
+          We can't wait to celebrate this wonderful
+          new chapter with you!
+        </p>
+
+        <br>
+
+        <p>
+          Your presence will make this special day
+          even more memorable.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COUNTDOWN
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2>
+        Countdown to the Big Day
+      </h2>
+
+      <div id="countdown">
+
+        <div class="time-box">
+
+          <strong id="days">
+            0
+          </strong>
+
+          <span>
+            Days
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="hours">
+            0
+          </strong>
+
+          <span>
+            Hours
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="minutes">
+            0
+          </strong>
+
+          <span>
+            Minutes
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="seconds">
+            0
+          </strong>
+
+          <span>
+            Seconds
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       TEAM BOY / TEAM GIRL
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2>
+        Team Boy or Team Girl?
+      </h2>
+
+      <div class="card">
+
+        <p>
+          Make your prediction!
+        </p>
+
+        <br>
+
+        <div class="poll-buttons">
+
+          <button
+            type="button"
+            onclick="vote('Team Boy')">
+
+            Team Boy
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="vote('Team Girl')">
+
+            Team Girl
+
+          </button>
+
+        </div>
+
+        <br>
+
+        <p id="voteMessage"></p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       BABY NAME
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2>
+        Suggest a Baby Name
+      </h2>
+
+      <div class="card">
+
+        <p>
+          Have a beautiful name idea?
+        </p>
+
+        <br>
+
+        <input
+          type="text"
+          id="babyName"
+          placeholder="Your beautiful name idea"
+        >
+
+        <button
+          type="button"
+          class="submit-btn"
+          onclick="submitBabyName()">
+
+          Submit Name
+
+        </button>
+
+        <p id="nameMessage"></p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       VENUE
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2>
+        Venue
+      </h2>
+
+      <div class="card">
+
+        <h3>
+          Bombay Palace Restaurant And Banquets
+        </h3>
+
+        <br>
+
+        <p>
+          We look forward to celebrating
+          this special day with you!
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       RSVP
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2>
+        RSVP
+      </h2>
+
+      <div class="card">
+
+        <form id="rsvpForm">
+
+
+          <input
+            type="text"
+            id="guestName"
+            placeholder="Your Name"
+            required
+          >
+
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+          >
+
+
+          <select
+            id="guests"
+            required>
+
+            <option value="">
+              Number of Guests
+            </option>
+
+            <option value="1">
+              1
+            </option>
+
+            <option value="2">
+              2
+            </option>
+
+            <option value="3">
+              3
+            </option>
+
+            <option value="4">
+              4
+            </option>
+
+            <option value="5+">
+              5+
+            </option>
+
+          </select>
+
+
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Message">
+          </textarea>
+
+
+          <button
+            type="submit"
+            class="submit-btn">
+
+            Send RSVP
+
+          </button>
+
+        </form>
+
+
+        <p id="rsvpMessage"></p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</div>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+  <p>
+    With love, Nikita & Swapan
+  </p>
+
+  <p>
+    #SwapNik Baby Shower
+  </p>
+
+</footer>
+
+
 
 <script>
 
-const GOOGLE_SCRIPT_URL =
-  "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
-</script>
-
-
-<script>
-
-/* =====================================================
+/* ==================================================
    MUSIC
-===================================================== */
+================================================== */
 
 const music =
   document.getElementById("music");
 
-const musicBtn =
-  document.getElementById("musicBtn");
+
+let musicStarted = false;
 
 
-function startMusic(){
+/*
+   FUNCTION:
+   Try to automatically start music.
+*/
+
+function tryAutomaticMusic(){
+
+  if(musicStarted){
+
+    return;
+
+  }
+
 
   music.volume = 1.0;
 
-  music.play()
 
-    .then(() => {
-
-      musicBtn.textContent = "🔊";
-
-      musicBtn.setAttribute(
-        "aria-label",
-        "Pause music"
-      );
-
-      console.log(
-        "Music started automatically."
-      );
-
-    })
-
-    .catch((error) => {
-
-      console.log(
-        "Browser blocked automatic music:",
-        error
-      );
-
-      musicBtn.textContent = "🎵";
-
-    });
-
-}
+  const playPromise =
+    music.play();
 
 
-function toggleMusic(){
+  if(playPromise !== undefined){
 
-  if(music.paused){
+    playPromise
 
-    music.play()
+      .then(function(){
 
-      .then(() => {
+        musicStarted = true;
 
-        musicBtn.textContent = "🔊";
-
-        musicBtn.setAttribute(
-          "aria-label",
-          "Pause music"
+        console.log(
+          "Music started automatically."
         );
 
       })
 
-      .catch((error) => {
+      .catch(function(){
 
-        console.error(
-          "Music failed:",
-          error
-        );
-
-        alert(
-          "Music could not be played. Please check that music.mp3 is a valid MP3 file."
+        console.log(
+          "Browser blocked automatic playback."
         );
 
       });
-
-  }else{
-
-    music.pause();
-
-    musicBtn.textContent = "🎵";
-
-    musicBtn.setAttribute(
-      "aria-label",
-      "Play music"
-    );
 
   }
 
 }
 
 
-music.addEventListener(
-  "ended",
-  () => {
-
-    musicBtn.textContent = "🎵";
-
-  }
-);
-
-
-music.addEventListener(
-  "error",
-  () => {
-
-    console.error(
-      "Could not load music.mp3"
-    );
-
-    musicBtn.textContent = "⚠️";
-
-  }
-);
-
-
-/* =====================================================
-   AUTOMATIC MUSIC ON PAGE OPEN
-===================================================== */
+/*
+   TRY MUSIC WHEN WEBSITE OPENS
+*/
 
 window.addEventListener(
   "load",
   function(){
 
-    setTimeout(
-      function(){
-
-        startMusic();
-
-      },
-      300
-    );
+    tryAutomaticMusic();
 
   }
 );
 
 
-/* =====================================================
+/*
+   INVISIBLE FALLBACK
+
+   If the browser blocks autoplay,
+   the first touch anywhere on the page
+   starts the music.
+
+   There is NO visible music button.
+*/
+
+function startMusicAfterInteraction(){
+
+  if(musicStarted){
+
+    return;
+
+  }
+
+
+  music.volume = 1.0;
+
+
+  const playPromise =
+    music.play();
+
+
+  if(playPromise !== undefined){
+
+    playPromise
+
+      .then(function(){
+
+        musicStarted = true;
+
+        console.log(
+          "Music started after first interaction."
+        );
+
+
+        document.removeEventListener(
+          "pointerdown",
+          startMusicAfterInteraction
+        );
+
+      })
+
+      .catch(function(){
+
+        console.log(
+          "Music could not be started."
+        );
+
+      });
+
+  }
+
+}
+
+
+/*
+   Works with phone touch
+   and mouse click.
+*/
+
+document.addEventListener(
+  "pointerdown",
+  startMusicAfterInteraction,
+  {
+    passive:true
+  }
+);
+
+
+/* ==================================================
    COUNTDOWN
-===================================================== */
+================================================== */
+
+
+/*
+   November 22, 2026
+   10:00 AM
+   Brampton / Eastern Time
+*/
+
+const eventDate =
+  new Date(
+    "November 22, 2026 10:00:00 GMT-0500"
+  ).getTime();
+
 
 function updateCountdown(){
 
-  const target =
-    new Date(
-      "2026-11-22T10:00:00-05:00"
-    ).getTime();
-
   const now =
-    Date.now();
-
-  const d =
-    Math.max(
-      0,
-      target - now
-    );
+    new Date().getTime();
 
 
-  document.getElementById("days").textContent =
+  const distance =
+    eventDate - now;
+
+
+  if(distance <= 0){
+
+    document.getElementById(
+      "days"
+    ).textContent = "0";
+
+
+    document.getElementById(
+      "hours"
+    ).textContent = "0";
+
+
+    document.getElementById(
+      "minutes"
+    ).textContent = "0";
+
+
+    document.getElementById(
+      "seconds"
+    ).textContent = "0";
+
+
+    return;
+
+  }
+
+
+  const days =
     Math.floor(
-      d / 86400000
+      distance /
+      (1000 * 60 * 60 * 24)
     );
 
 
-  document.getElementById("hours").textContent =
+  const hours =
     Math.floor(
-      d % 86400000 / 3600000
+      (
+        distance %
+        (1000 * 60 * 60 * 24)
+      ) /
+      (1000 * 60 * 60)
     );
 
 
-  document.getElementById("mins").textContent =
+  const minutes =
     Math.floor(
-      d % 3600000 / 60000
+      (
+        distance %
+        (1000 * 60 * 60)
+      ) /
+      (1000 * 60)
     );
 
 
-  document.getElementById("secs").textContent =
+  const seconds =
     Math.floor(
-      d % 60000 / 1000
+      (
+        distance %
+        (1000 * 60)
+      ) /
+      1000
     );
+
+
+  document.getElementById(
+    "days"
+  ).textContent = days;
+
+
+  document.getElementById(
+    "hours"
+  ).textContent = hours;
+
+
+  document.getElementById(
+    "minutes"
+  ).textContent = minutes;
+
+
+  document.getElementById(
+    "seconds"
+  ).textContent = seconds;
 
 }
 
 
 updateCountdown();
+
 
 setInterval(
   updateCountdown,
@@ -1121,237 +1127,108 @@ setInterval(
 );
 
 
-/* =====================================================
-   GOOGLE SHEET
-===================================================== */
 
-function postToGoogleSheet(data){
+/* ==================================================
+   TEAM BOY / TEAM GIRL
+================================================== */
 
-  if(
-    !GOOGLE_SCRIPT_URL ||
-    GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")
-  ){
+function vote(choice){
 
-    return Promise.reject(
-      new Error(
-        "Google Sheet connection is not configured yet."
-      )
-    );
+  document.getElementById(
+    "voteMessage"
+  ).textContent =
+    "You voted for " +
+    choice +
+    "!";
+
+}
+
+
+
+/* ==================================================
+   BABY NAME
+================================================== */
+
+function submitBabyName(){
+
+  const name =
+    document
+      .getElementById("babyName")
+      .value
+      .trim();
+
+
+  if(!name){
+
+    document.getElementById(
+      "nameMessage"
+    ).textContent =
+      "Please enter a baby name.";
+
+    return;
 
   }
 
 
-  const body =
-    new URLSearchParams(data);
+  document.getElementById(
+    "nameMessage"
+  ).textContent =
+    "Thank you for suggesting " +
+    name +
+    "!";
+
+}
 
 
-  return fetch(
-    GOOGLE_SCRIPT_URL,
-    {
-      method:"POST",
-      mode:"no-cors",
-      headers:{
-        "Content-Type":
-          "application/x-www-form-urlencoded;charset=UTF-8"
-      },
-      body
+
+/* ==================================================
+   RSVP
+================================================== */
+
+document
+  .getElementById("rsvpForm")
+  .addEventListener(
+    "submit",
+    function(event){
+
+      event.preventDefault();
+
+
+      const guestName =
+        document
+          .getElementById("guestName")
+          .value;
+
+
+      document.getElementById(
+        "rsvpMessage"
+      ).textContent =
+        "Thank you, " +
+        guestName +
+        "! Your RSVP has been received.";
+
     }
   );
 
-}
 
 
-/* =====================================================
-   TEAM BOY / GIRL
-===================================================== */
+/* ==================================================
+   GOOGLE APPS SCRIPT
+================================================== */
 
-function vote(
-  choice,
-  btn
-){
 
-  document
-    .querySelectorAll(".option")
-    .forEach(
-      x =>
-        x.classList.remove(
-          "selected"
-        )
-    );
+/*
+   Replace the URL below with your
+   Google Apps Script Web App URL.
+*/
 
+const GOOGLE_SCRIPT_URL =
+  "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
-  btn.classList.add(
-    "selected"
-  );
-
-
-  document
-    .getElementById("voteResult")
-    .textContent =
-      "Saving your guess… 💕";
-
-
-  postToGoogleSheet({
-
-    type:"Team Vote",
-
-    vote:choice
-
-  })
-
-  .then(() => {
-
-    document
-      .getElementById("voteResult")
-      .textContent =
-        "Your guess: " +
-        choice +
-        " 💕";
-
-  })
-
-  .catch(() => {
-
-    document
-      .getElementById("voteResult")
-      .textContent =
-        "Please connect the Google Sheet first.";
-
-  });
-
-}
-
-
-/* =====================================================
-   BABY NAME
-===================================================== */
-
-function addName(){
-
-  const input =
-    document.getElementById(
-      "nameInput"
-    );
-
-  const value =
-    input.value.trim();
-
-
-  if(!value)
-    return;
-
-
-  postToGoogleSheet({
-
-    type:"Baby Name",
-
-    baby_name:value
-
-  })
-
-  .then(() => {
-
-    input.value = "";
-
-    renderNames();
-
-    alert(
-      "Thank you! Your baby name idea was submitted. 💕"
-    );
-
-  })
-
-  .catch(() => {
-
-    alert(
-      "Please connect the Google Sheet first."
-    );
-
-  });
-
-}
-
-
-function renderNames(){
-
-  /*
-    Names are saved to Google Sheets.
-  */
-
-}
-
-
-/* =====================================================
-   RSVP
-===================================================== */
-
-function submitRSVP(e){
-
-  e.preventDefault();
-
-
-  const result =
-    document.getElementById(
-      "rsvpResult"
-    );
-
-
-  result.textContent =
-    "Sending…";
-
-
-  postToGoogleSheet({
-
-    type:"RSVP",
-
-    name:
-      document
-        .getElementById(
-          "rsvpName"
-        )
-        .value
-        .trim(),
-
-    attendance:
-      document
-        .getElementById(
-          "rsvpAttendance"
-        )
-        .value,
-
-    guests:
-      document
-        .getElementById(
-          "rsvpGuests"
-        )
-        .value
-
-  })
-
-  .then(() => {
-
-    result.textContent =
-      "Thank you! Your RSVP has been recorded. 💕";
-
-
-    document
-      .getElementById(
-        "rsvpForm"
-      )
-      .reset();
-
-  })
-
-  .catch(() => {
-
-    result.textContent =
-      "Please connect the Google Sheet first.";
-
-  });
-
-}
 
 </script>
 
+
 </body>
+
 </html>
