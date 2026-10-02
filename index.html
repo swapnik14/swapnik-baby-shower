@@ -656,49 +656,6 @@ h2{
 
 
 /* =====================================================
-   INPUTS
-===================================================== */
-
-.form-input{
-  width:100%;
-
-  padding:13px;
-
-  border:1px solid #e5d8dc;
-
-  border-radius:14px;
-
-  font-size:16px;
-
-  background:#fff;
-
-  color:#3e3035;
-
-  outline:none;
-}
-
-.form-input:focus{
-  border-color:#b86f83;
-
-  box-shadow:
-    0 0 0 3px rgba(184,111,131,.10);
-}
-
-
-/* =====================================================
-   STATUS
-===================================================== */
-
-.status-success{
-  color:#6b8b72 !important;
-}
-
-.status-error{
-  color:#a55d67 !important;
-}
-
-
-/* =====================================================
    MOBILE
 ===================================================== */
 
@@ -826,6 +783,8 @@ h2{
       Sunday • November 22, 2026
     </p>
 
+
+    <!-- OPEN INVITATION -->
 
     <button
       id="openInvitation"
@@ -1121,52 +1080,6 @@ h2{
   </p>
 
 
-  <!-- GUEST NAME -->
-
-  <div class="poll-card">
-
-    <div class="kicker">
-      Your details
-    </div>
-
-    <label
-      for="guessName"
-      style="
-        display:block;
-        font-size:12px;
-        font-weight:700;
-        margin:8px 0 6px;
-      ">
-
-      Your name
-
-    </label>
-
-
-    <input
-      id="guessName"
-      class="form-input"
-      type="text"
-      placeholder="Enter your name"
-      autocomplete="name">
-
-
-    <p
-      style="
-        font-size:12px;
-        color:#8b6975;
-        margin:8px 0 0;
-      ">
-
-      Use the same name when submitting your RSVP.
-
-    </p>
-
-  </div>
-
-
-  <!-- TEAM VOTE -->
-
   <div class="poll-card">
 
 
@@ -1175,7 +1088,6 @@ h2{
 
       <button
         class="option"
-        type="button"
         onclick="vote('Team Boy', this)">
 
         <span class="team-emoji boy">
@@ -1193,7 +1105,6 @@ h2{
 
       <button
         class="option"
-        type="button"
         onclick="vote('Team Girl', this)">
 
         <span class="team-emoji girl">
@@ -1254,12 +1165,10 @@ h2{
 
       <input
         id="nameInput"
-        type="text"
         placeholder="Type a name">
 
 
       <button
-        type="button"
         onclick="addName()">
 
         Add
@@ -1274,17 +1183,6 @@ h2{
       class="name-list"
       id="nameList">
     </div>
-
-
-    <p
-      id="nameResult"
-      style="
-        font-size:13px;
-        text-align:center;
-        color:#8b6975;
-        margin-bottom:0;
-      ">
-    </p>
 
 
   </div>
@@ -1401,7 +1299,6 @@ h2{
 
 
       <label
-        for="rsvpName"
         style="
           display:block;
           font-size:12px;
@@ -1416,14 +1313,17 @@ h2{
 
       <input
         id="rsvpName"
-        class="form-input"
         required
         placeholder="Enter your name"
-        autocomplete="name">
+        style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
+        ">
 
 
       <label
-        for="rsvpAttendance"
         style="
           display:block;
           font-size:12px;
@@ -1438,9 +1338,12 @@ h2{
 
       <select
         id="rsvpAttendance"
-        class="form-input"
         required
         style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
           background:#fff;
         ">
 
@@ -1464,7 +1367,6 @@ h2{
 
 
       <label
-        for="rsvpGuests"
         style="
           display:block;
           font-size:12px;
@@ -1479,9 +1381,12 @@ h2{
 
       <select
         id="rsvpGuests"
-        class="form-input"
         required
         style="
+          width:100%;
+          padding:13px;
+          border:1px solid #e5d8dc;
+          border-radius:14px;
           background:#fff;
         ">
 
@@ -1582,7 +1487,7 @@ h2{
      MUSIC
 
      IMPORTANT:
-     Put music.mp3 in the SAME folder as index.html.
+     music.mp3 must be in the SAME folder as index.html
 ===================================================== -->
 
 <audio
@@ -1591,7 +1496,7 @@ h2{
   preload="auto">
 
   <source
-    src="./music.mp3?v=2"
+    src="./music.mp3"
     type="audio/mpeg">
 
 </audio>
@@ -1604,7 +1509,7 @@ h2{
 <script>
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzG_iPPlG5TG89sy9dnB0IGymy0KaawF2XN5EBD92TsWmnGEAFz2zHPI0rWO5W0AfE/exec";
+  "https://script.google.com/macros/s/AKfycbzvZmRwWf8Gq5xcx5XGmkxqDaQgiK6u2UEfqjzC9xBZjpXP17tXIO8Ie401U2QmLbY/exec";
 
 </script>
 
@@ -1613,7 +1518,7 @@ const GOOGLE_SCRIPT_URL =
 
 
 /* =====================================================
-   ELEMENTS
+   OPEN INVITATION + MUSIC
 ===================================================== */
 
 const openInvitation =
@@ -1636,133 +1541,15 @@ const music =
     "music"
   );
 
-const guessName =
-  document.getElementById(
-    "guessName"
-  );
-
-const rsvpName =
-  document.getElementById(
-    "rsvpName"
-  );
-
 
 let musicStarted = false;
 
 
-/* =====================================================
-   SAVED NAME
-===================================================== */
-
-const savedGuestName =
-  localStorage.getItem(
-    "swapNikGuestName"
-  );
-
-
-if(savedGuestName){
-
-  guessName.value =
-    savedGuestName;
-
-  rsvpName.value =
-    savedGuestName;
-
-}
-
-
-/* =====================================================
-   SAVE GUEST NAME
-===================================================== */
-
-function saveGuestName(name){
-
-  const cleanName =
-    String(name || "").trim();
-
-
-  if(!cleanName){
-    return;
-  }
-
-
-  localStorage.setItem(
-    "swapNikGuestName",
-    cleanName
-  );
-
-
-  guessName.value =
-    cleanName;
-
-  rsvpName.value =
-    cleanName;
-
-}
-
-
-/* =====================================================
-   KEEP NAMES SYNCHRONIZED
-===================================================== */
-
-guessName.addEventListener(
-  "input",
-  function(){
-
-    const value =
-      guessName.value.trim();
-
-    if(value){
-
-      localStorage.setItem(
-        "swapNikGuestName",
-        value
-      );
-
-      rsvpName.value =
-        value;
-
-    }
-
-  }
-);
-
-
-rsvpName.addEventListener(
-  "input",
-  function(){
-
-    const value =
-      rsvpName.value.trim();
-
-    if(value){
-
-      localStorage.setItem(
-        "swapNikGuestName",
-        value
-      );
-
-      guessName.value =
-        value;
-
-    }
-
-  }
-);
-
-
-/* =====================================================
-   OPEN INVITATION + MUSIC
-===================================================== */
+/* OPEN INVITATION */
 
 openInvitation.addEventListener(
   "click",
   async function(){
-
-    /*
-      The button click is a real user interaction,
-      so browsers are allowed to start the music.
-    */
 
     music.volume = 1.0;
 
@@ -1773,12 +1560,10 @@ openInvitation.addEventListener(
       musicStarted = true;
 
       console.log(
-        "Music started successfully."
+        "Music started."
       );
 
-    }
-
-    catch(error){
+    }catch(error){
 
       console.log(
         "Music could not start:",
@@ -1946,7 +1731,7 @@ function postToGoogleSheet(data){
 
     return Promise.reject(
       new Error(
-        "Google Sheet connection is not configured."
+        "Google Sheet connection is not configured yet."
       )
     );
 
@@ -1971,57 +1756,9 @@ function postToGoogleSheet(data){
           "application/x-www-form-urlencoded;charset=UTF-8"
       },
 
-      body:body
+      body
     }
   );
-
-}
-
-
-/* =====================================================
-   GET GUEST NAME
-===================================================== */
-
-function getGuestName(){
-
-  const nameFromGuess =
-    document
-      .getElementById(
-        "guessName"
-      )
-      .value
-      .trim();
-
-
-  const nameFromRSVP =
-    document
-      .getElementById(
-        "rsvpName"
-      )
-      .value
-      .trim();
-
-
-  const savedName =
-    localStorage.getItem(
-      "swapNikGuestName"
-    ) || "";
-
-
-  const name =
-    nameFromGuess ||
-    nameFromRSVP ||
-    savedName;
-
-
-  if(name){
-
-    saveGuestName(name);
-
-  }
-
-
-  return name;
 
 }
 
@@ -2035,43 +1772,15 @@ function vote(
   btn
 ){
 
-  const name =
-    getGuestName();
-
-
-  if(!name){
-
-    document.getElementById(
-      "voteResult"
-    ).textContent =
-      "Please enter your name first. 💕";
-
-    document.getElementById(
-      "voteResult"
-    ).className =
-      "status-error";
-
-    document.getElementById(
-      "guessName"
-    ).focus();
-
-    return;
-
-  }
-
-
   document
     .querySelectorAll(
       ".option"
     )
     .forEach(
-      function(x){
-
+      x =>
         x.classList.remove(
           "selected"
-        );
-
-      }
+        )
     );
 
 
@@ -2082,18 +1791,13 @@ function vote(
 
   document.getElementById(
     "voteResult"
-  ).className = "";
-
-
-  document.getElementById(
-    "voteResult"
   ).textContent =
-    "Saving your guess…";
+    "Saving your guess… 💕";
 
 
   postToGoogleSheet({
 
-    name:name,
+    type:"Team Vote",
 
     vote:choice
 
@@ -2101,12 +1805,6 @@ function vote(
 
 
   .then(function(){
-
-    document.getElementById(
-      "voteResult"
-    ).className =
-      "status-success";
-
 
     document.getElementById(
       "voteResult"
@@ -2118,24 +1816,12 @@ function vote(
   })
 
 
-  .catch(function(error){
-
-    console.error(
-      "Vote error:",
-      error
-    );
-
-
-    document.getElementById(
-      "voteResult"
-    ).className =
-      "status-error";
-
+  .catch(function(){
 
     document.getElementById(
       "voteResult"
     ).textContent =
-      "Something went wrong. Please try again.";
+      "Please connect the Google Sheet first.";
 
   });
 
@@ -2148,19 +1834,9 @@ function vote(
 
 function addName(){
 
-  const personName =
-    getGuestName();
-
-
   const input =
     document.getElementById(
       "nameInput"
-    );
-
-
-  const result =
-    document.getElementById(
-      "nameResult"
     );
 
 
@@ -2168,56 +1844,16 @@ function addName(){
     input.value.trim();
 
 
-  if(!personName){
-
-    result.className =
-      "status-error";
-
-
-    result.textContent =
-      "Please enter your name first. 💕";
-
-
-    document
-      .getElementById(
-        "guessName"
-      )
-      .focus();
-
-
-    return;
-
-  }
-
-
   if(!value){
 
-    result.className =
-      "status-error";
-
-
-    result.textContent =
-      "Please enter a baby name.";
-
-
-    input.focus();
-
-
     return;
 
   }
-
-
-  result.className = "";
-
-
-  result.textContent =
-    "Saving your baby name idea…";
 
 
   postToGoogleSheet({
 
-    name:personName,
+    type:"Baby Name",
 
     baby_name:value
 
@@ -2228,33 +1864,32 @@ function addName(){
 
     input.value = "";
 
-
-    result.className =
-      "status-success";
+    renderNames();
 
 
-    result.textContent =
-      "Thank you! Your baby name idea was submitted. 💕";
+    alert(
+      "Thank you! Your baby name idea was submitted. 💕"
+    );
 
   })
 
 
-  .catch(function(error){
+  .catch(function(){
 
-    console.error(
-      "Baby name error:",
-      error
+    alert(
+      "Please connect the Google Sheet first."
     );
 
-
-    result.className =
-      "status-error";
-
-
-    result.textContent =
-      "Something went wrong. Please try again.";
-
   });
+
+}
+
+
+function renderNames(){
+
+  /*
+    Names are saved to Google Sheets.
+  */
 
 }
 
@@ -2274,139 +1909,62 @@ function submitRSVP(e){
     );
 
 
-  const name =
-    document
-      .getElementById(
-        "rsvpName"
-      )
-      .value
-      .trim();
-
-
-  const attendance =
-    document
-      .getElementById(
-        "rsvpAttendance"
-      )
-      .value;
-
-
-  const guests =
-    document
-      .getElementById(
-        "rsvpGuests"
-      )
-      .value;
-
-
-  if(!name){
-
-    result.className =
-      "status-error";
-
-
-    result.textContent =
-      "Please enter your name.";
-
-
-    return;
-
-  }
-
-
-  if(!attendance){
-
-    result.className =
-      "status-error";
-
-
-    result.textContent =
-      "Please select whether you will attend.";
-
-
-    return;
-
-  }
-
-
-  saveGuestName(name);
-
-
-  result.className = "";
-
-
   result.textContent =
     "Sending…";
 
 
   postToGoogleSheet({
 
-    name:name,
+    type:"RSVP",
 
-    attendance:attendance,
+    name:
+      document
+        .getElementById(
+          "rsvpName"
+        )
+        .value
+        .trim(),
 
-    guests:guests
+    attendance:
+      document
+        .getElementById(
+          "rsvpAttendance"
+        )
+        .value,
+
+    guests:
+      document
+        .getElementById(
+          "rsvpGuests"
+        )
+        .value
 
   })
 
 
   .then(function(){
 
-    result.className =
-      "status-success";
-
-
     result.textContent =
       "Thank you! Your RSVP has been recorded. 💕";
+
+
+    document
+      .getElementById(
+        "rsvpForm"
+      )
+      .reset();
 
   })
 
 
-  .catch(function(error){
-
-    console.error(
-      "RSVP error:",
-      error
-    );
-
-
-    result.className =
-      "status-error";
-
+  .catch(function(){
 
     result.textContent =
-      "Something went wrong. Please try again.";
+      "Please connect the Google Sheet first.";
 
   });
 
 }
-
-
-/* =====================================================
-   ENTER KEY FOR BABY NAME
-===================================================== */
-
-document
-  .getElementById(
-    "nameInput"
-  )
-  .addEventListener(
-    "keydown",
-    function(event){
-
-      if(
-        event.key === "Enter"
-      ){
-
-        event.preventDefault();
-
-        addName();
-
-      }
-
-    }
-  );
-
 
 </script>
 
